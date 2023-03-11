@@ -1,0 +1,41 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+Cc.Ui/node_modules
+Cc.Ui/.pnp
+Cc.Ui/.pnp.js
+
+# testing
+Cc.Ui/coverage
+
+# production
+Cc.Ui/build
+
+# misc
+Cc.Ui/.DS_Store
+Cc.Ui/.env.local
+Cc.Ui/.env.development.local
+Cc.Ui/.env.test.local
+Cc.Ui/.env.production.local
+
+Cc.Ui/npm-debug.log*
+Cc.Ui/yarn-debug.log*
+Cc.Ui/yarn-error.log*
+Cc.Ui/.env
+Cc.Ui/test-results/
+Cc.Ui/playwright-report/
+Cc.Ui/playwright/.cache/
+Cc.Ui/test-results/
+Cc.Ui/playwright-report/
+Cc.Ui/playwright/.cache/
+Cc.Ui/test-results/
+Cc.Ui/playwright-report/
+Cc.Ui/playwright/.cache/
+
+*/bin
+*/obj
+packages
+.vs
+*/logs
+*/Logs
+

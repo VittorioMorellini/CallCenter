@@ -1,0 +1,97 @@
+{
+    "broadcastingTypes": {
+        "nationalTv": "National Tv",
+        "localTv": "Local Tv",
+        "telemarketing": "Telemarketing",
+        "paper": "Paper",
+        "web": "Web"
+    },
+    "dossierField": {
+        "input": "Input",
+        "date": "Date",
+        "switch": "Switch",
+        "autocomplete": "Autocomplete"
+    },
+    "dossierFieldValue": {
+        "text": "Text",
+        "query": "Query",
+        "json": "Json"
+    },
+    "dossierProcess":{
+        "onboarding": "Onboarding",
+        "subscription": "Subscription",
+        "both": "Onboarding / Subscription"
+    },
+    "identityDocument": {
+        "identityCard": "Identity card",
+        "drivingLicense": "Driving license",
+        "passport": "Passport"
+    },
+    "notification": {
+        "type": {
+            "email": "Email",
+            "appMessage": "App message"
+        },
+        "category": {
+            "SIGN_LINK": "Link di firma",
+            "SELF_LINK": "Sign link for self identification",
+            "DOCU_COMP_LINK": "Link document composition",
+            "DOSSIER_COMPLETED": "Dossier completato",
+            "DOSSIER_ERROR": "Dossier in errore",
+            "DOCUMENTS_SIGNED": "Documenti firmati",
+            "DOCUMENTS_SIGNED_SIGNER": "Documenti firmati firmatario",
+            "PRINCIPAL_CREDENTIAL": "Credenziali utente",
+            "SELF_HUMAN_CHECK": "Human check required for data validation",
+            "SELF_CUSTOMER_MAIL": "Info Customer via mail"
+        }
+    },
+    "status": {
+        "running": "In escuzione",
+        "queued": "In coda",
+        "error": "In Errore",
+        "completed": "Completato"
+    },
+    "person": {
+        "external": "External",
+        "internal": "Internal",
+        "principal": "Agent"
+    },
+    "reason": {
+        "keyword": "Keyword",
+        "field": "Field",
+        "absolute": "Coordinates",
+        "interactive": "Interactive"
+    },
+    "role":{
+        "admin": "ADMIN",
+        "manager": "MANAGER",
+        "operator": "OPERATOR",
+        "salesman": "SALESMAN",
+        "lawyer": "LAWYER",
+        "customer": "CUSTOMER"
+    },
+    "sex": {
+        "male": "Male",
+        "female": "Female"
+    },
+    "trustLevel": {
+        "notDefined": "Not defined",
+        "feq": "FEQ",
+        "fes": "FES",
+        "fea": "FEA"
+    },
+    "language": {
+        "it": "Italiano",
+        "en": "English"
+    },
+    "principalVisibility": {
+        "personal": "Personal",
+        "agency": "Agency",
+        "company": "Company"
+    },
+    "additionalReasons": {
+        "0": "No",
+        "1": "Optional",
+        "2": "Mandatory"
+    }
+}

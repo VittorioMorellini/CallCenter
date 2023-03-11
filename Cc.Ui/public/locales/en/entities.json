@@ -1,0 +1,403 @@
+{
+    "agency": {
+        "companyId": "Company",
+        "regionId": "Region",
+        "name": "Name",
+        "code": "Code",
+        "provinceCode": "Province Code",
+        "provinceDescription": "Province Description",
+        "cityCode": "City Code",
+        "cityDescription": "City Description",
+        "address": "Address",
+        "cap": "Cap",
+        "mail": "Mail",
+        "vatCode": "Vat code"
+    },
+    "area": {
+        "companyId": "Company",
+        "parentId": "Parent",
+        "code": "Code",
+        "description": "Description"
+    },
+    "broadcasting": {
+        "name": "Name",
+        "type": "Type",
+        "authorityName": "Authority Name",
+        "authorityData": "Authority Data",
+        "notes": "Notes"
+    },
+    "broadcastingProduct": {
+        "broadcastingId": "Broadcasting",
+        "productId": "Product"
+    },
+    "broadcastingTabRegion": {
+        "broadcastingId": "Broadcasting",
+        "tabRegionId": "Tab Region"
+    },
+    "category": {
+        "description": "Description",
+        "subProduct": "Sub Product"
+    },
+    "commission": {
+        "description": "Description",
+        "percentage": "Percentage"
+    },
+    "company": {
+        "businessName": "Business Name",
+        "vatCode": "Vat Code",
+        "taxCode": "Tax Code",
+        "pdfPassword": "Pdf Password",
+        "mail": "Mail"
+    },
+    "companyDocument": {
+        "companyId": "Company",
+        "type": "Type",
+        "code": "Code",
+        "description": "Description",
+        "documentId": "Document"
+    },
+    "configuration": {
+        "companyId": "Company",
+        "legalBusUrl": "Url",
+        "legalBusCompany": "Company code",
+        "legalBusUsername": "Username",
+        "legalBusPassword": "Password",
+        "legalBusStagingUrl": "Url",
+        "legalBusStagingCompany": "Company code",
+        "legalBusStagingUsername": "Username",
+        "legalBusStagingPassword": "Password",
+        "topUrl": "Url",
+        "topCompany": "Company code",
+        "topUsername": "Username",
+        "topPassword": "Password",
+        "topStagingUrl": "Url",
+        "topStagingCompany": "Company code",
+        "topStagingUsername": "Username",
+        "topStagingPassword": "Password",
+        "uiLogoUrl": "Logo url",
+        "uiLogoBackground": "Logo background color",
+        "uiLanguage": "Language",
+        "uiHome": "Home",
+        "uiColorPrimaryLight": " Primary Light",
+        "uiColorPrimaryMain": "Primary Main",
+        "uiColorPrimaryDark": "Primary Dark",
+        "uiColorPrimaryContrastText": "Primary Contrast Text",
+        "uiColorSecondaryLight": "Secondary Light",
+        "uiColorSecondaryMain": "Secondary Main",
+        "uiColorSecondaryDark": "Secondary Dark",
+        "uiColorSecondaryContrastText": "Secondary Contrast Text",
+        "retentionPolicy": "Retention policy",
+        "retentionPeriod": "Retention period (months)",
+        "retentionPeriodArchive": "Retention period archive (months)",
+        "principalMaxCount": "Maximum users per company",
+        "personDefaultCountry": "People default country",
+        "personDefaultPhonePrefix": "Telephone prefix default country",
+        "legalArchivingMode": "Legal archiving mode",
+        "ftpServer": "Ftp server",
+        "ftpPort": "Ftp port",
+        "ftpOutputDir": "Upload directory",
+        "ftpUsername": "Ftp username",
+        "ftpPassword": "Ftp password",
+        "uiCustomerDetail": "Customer configuration",
+        "customerDetailPhonePrefix": "Phone prefix default",
+        "customerDefaultCountry": "Customer default country"
+    },
+    "customer": {
+        "companyId": "Company",
+        "type": "Type",
+        "firstName": "Surname",
+        "lastName": "Name",
+        "taxCode": "Tax Code",
+        "sex": "Sex",
+        "phone": "Phone",
+        "mobilePhone": "Mobile phone",
+        "mail": "Mail",
+        "agencyId": "Agency",
+        "vatCode": "Vat code",
+        "birthDate": "Birth Date",
+        "contactDate": "Contact date",
+        "recallDate": "Recall date",
+        "districtId": "Province",
+        "broadcastingId": "Broadcasting",
+        "city": "City",
+        "country": "Country",
+        "address": "Address",
+        "addressNumber": "Number",
+        "identificationDocType": "Identification document type",
+        "identificationDocNumber": "Identification document number",
+        "identificationDocCountry": "Identification document country",
+        "identificationDocReleaseDate": "Identification document release date",
+        "identificationDocExpirationDate": "Identification document expiration date",
+        "docReleaseInvalidDate": "Invalid date, must be before than today",
+        "docExpirationInvalidDate": "Invalid date, must be after than today",
+        "disabled": "Disabled",
+        "certificate": "Certificate",
+        "error": "Error",
+        "state": "State",
+        "region": "Region",
+        "productId": "Product",
+        "calls": "Calls",
+        "lastCall": "Last call"
+    },
+    "customerCall": {
+        "description": "Description",
+        "principalId": "Principal",
+        "customerId": "Customer",
+        "callDate": "Call Date"
+    },
+    "personDocument": {
+        "type": "Type",
+        "documentId": "Document"
+    },
+    "document": {
+        "status": "Status",
+        "statusMessage": "Status Message",
+        "entity": "Entity",
+        "type": "Type",
+        "name": "Name",
+        "date": "Date",
+        "file": "File",
+        "repository": "Repository",
+        "externalId": "External",
+        "fileSigned": "File Signed",
+        "repositorySigned": "Repository Signed",
+        "externalIdSigned": "External Signed",
+        "opened": "Opened"
+    },
+    "documentAttribute": {
+        "documentId": "Document",
+        "type": "Type",
+        "code": "Code",
+        "value": "Value"
+    },
+    "eventType": {
+        "name": "Name",
+        "description": "Description"
+    },
+    "grouping": {
+        "companyId": "Company",
+        "code": "Code",
+        "description": "Description"
+    },
+    "groupingAuth": {
+        "groupingId": "Grouping",
+        "entityId": "Entity",
+        "entity": "Entity",
+        "manager": "Manager",
+        "agencyId": "Agency",
+        "flowId": "Flow",
+        "productId": "Product"
+    },
+    "groupingGrant": {
+        "groupingId": "Grouping",
+        "groupingAuthId": "Grouping Auth",
+        "resourceGrantId": "Resource Grant",
+        "enabled": "Enabled",
+        "value": "Value"
+    },
+    "investment": {
+        "broadcastingId": "Broadcasting",
+        "dateFrom": "Date From",
+        "dateTo": "Date To",
+        "type": "Type",
+        "amount": "Amount",
+        "description": "Description",
+        "productId": "Product",
+        "categoryId": "Category",
+        "deleteUser": "Delete User",
+        "deleteDate": "Delete Date"
+    },
+    "measure": {
+        "description": "Description",
+        "name": "Name",
+        "deleteUser": "Delete User",
+        "deleteDate": "Delete Date"
+    },
+    "notification": {
+        "sentDate": "Date",
+        "readDate": "Read Date",
+        "notificationTemplateId": "Notification Template",
+        "companyId": "Company",
+        "agencyId": "Agency",
+        "principalId": "Principal",
+        "dossierId": "Dossier",
+        "signerId": "Signer",
+        "status": "Status",
+        "statusMessage": "Status Message",
+        "type": "Type",
+        "category": "Category",
+        "sender": "Sender",
+        "recipient": "Recipient",
+        "title": "Title",
+        "message": "Message",
+        "payload": "Payload"
+    },
+    "notificationTemplate": {
+        "type": "Type",
+        "category": "Category",
+        "language": "Language",
+        "companyId": "Company",
+        "agencyId": "Agency",
+        "flowId": "Flow",
+        "productId": "Product",
+        "signerTypeId": "Signer Type",
+        "sender": "Sender",
+        "displayName": "Display Name",
+        "subject": "Subject",
+        "text": "Text"
+    },
+    "logAccess": {
+        "date": "Date",
+        "companyId": "Company",
+        "principalId": "Principal Id",
+        "user": "User",
+        "version": "Version",
+        "userAgent": "User agent"
+    },
+    "logChange": {
+        "date": "Date",
+        "refTable": "Ref Table",
+        "refId": "Ref Id",
+        "refUser": "Ref User",
+        "action": "Action",
+        "payload": "Payload"
+    },
+    "logError": {
+        "date": "Date",
+        "companyId": "Company",
+        "principalId": "Principal",
+        "user": "User",
+        "version": "Version",
+        "userAgent": "User Agent",
+        "error": "Error",
+        "stack": "Stack"
+    },
+    "logQuery": {
+        "date": "Date",
+        "companyId": "Company",
+        "principalId": "Principal",
+        "user": "User",
+        "table": "Table",
+        "model": "Model",
+        "query": "Query",
+        "parameters": "Parameters",
+        "count": "Count",
+        "executionTime": "Execution Time",
+        "error": "Error"
+    },
+    "mailTemplate": {
+        "companyId": "Company",
+        "flowId": "Workflow",
+        "agencyId": "Agency",
+        "productId": "Product",
+        "signerTypeId": "Signer type",
+        "text": "Text",
+        "type": "Type",
+        "language": "Language",
+        "sender": "Sender",
+        "subject": "Subject",
+        "displayName": "Name display"
+    },
+    "personRequiredField": {
+        "processTypeId": "Process Type",
+        "companyId": "Company",
+        "agencyId": "Agency",
+        "flowId": "Flow",
+        "productId": "Product",
+        "signerTypeId": "Signer type",
+        "base": "Base",
+        "birth": "Birth",
+        "residence": "Residence",
+        "identification": "Identification",
+        "custom": "Custom fields",
+        "fields": "Fields"
+    },
+    "principal": {
+        "companyId": "Company",
+        "surname": "Surname",
+        "name": "Name",
+        "taxCode": "Tax Code",
+        "mail": "Mail",
+        "phone": "Phone",
+        "mobilePhone": "Mobile phone",
+        "username": "Username",
+        "password": "Password",
+        "role": "Role",
+        "language": "Language",
+        "avatarId": "Profile picture",
+        "disabled": "Disabled",
+        "city": "City",
+        "province": "Province",
+        "address": "Address",
+        "country": "Country",
+        "cap": "Cap",
+        "agendaLocked": "Locked agenda"
+    },
+    "principalUpload": {
+        "notify": "Send notification",
+        "fileUpload": "File to upload"
+    },
+    "principalAuth": {
+        "principalId": "Principal",
+        "entityId": "Entity",
+        "entity": "Entity",
+        "manager": "Manager",
+        "role": "Role",
+        "path": "Path",
+        "portalUser": "Portal User",
+        "agencyId": "Agency",
+        "flowId": "Flow",
+        "productId": "Product",
+        "categoryId": "Category",
+        "userPath": "Path User"
+    },
+    "principalTabRegion": {
+        "principalId": "Principal",
+        "tabRegionId": "District"
+    },
+    "principalGrant": {
+        "principalId": "Principal",
+        "principalAuthId": "Principal Auth",
+        "resourceGrantId": "Resource Grant",
+        "enabled": "Enabled",
+        "value": "Value"
+    },
+    "principalGrouping": {
+        "principalId": "Principal",
+        "groupingId": "Group",
+        "description": "Description"
+    },
+    "product": {
+        "companyId": "Company",
+        "agencyId": "Agency",
+        "flowId": "Flow",
+        "areaId": "Area",
+        "certificateId": "Automatic Sign",
+        "code": "Code",
+        "description": "Description",
+        "trustLevel": "Trust Level",
+        "disabled": "Disabled",
+        "price": "Price",
+        "categoryId": "Category"
+    },
+    "region": {
+        "companyId": "Company",
+        "parentId": "Parent",
+        "code": "Code",
+        "description": "Description"
+    },
+    "resourceGrant": {
+        "companyId": "Company",
+        "type": "Type",
+        "code": "Code",
+        "description": "Description",
+        "value": "Value"
+    },
+    "warehouse": {
+        "description": "Description",
+        "salesmanId": "Salesman",
+        "warehouseTypeId": "Warehouse Type"
+    },
+    "warehouseType": {
+        "name": "Name"
+    }}

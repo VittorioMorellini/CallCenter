@@ -1,0 +1,413 @@
+{
+    "nav": {
+        "operation": "Operation",
+        "configuration": "Configurazione",
+        "administration": "Amministrazione",
+        "test": "Test",
+        "log": "Log",
+        "report": "Statistiche" 
+    },
+    "agenda": {
+        "index": {
+            "title": "Agenda"
+        },
+        "detail": {
+            "title": "Dossier per task"
+        }
+    },
+    "agency": {
+        "index": {
+            "title": "Agenzie"
+        },
+        "detail": {
+            "title": "Agenzia"
+        }
+    },
+    "checklist": {
+        "index": {
+            "title": "Check list"
+        },
+        "detail": {
+            "title": "Check list"
+        }
+    },
+    "area": {
+        "index": {
+            "title": "Area"
+        },
+        "detail": {
+            "title": "Area"
+        }
+    },
+    "broadcasting": {
+        "index": {
+            "title": "Emittenti"
+        },
+        "detail": {
+            "title": "Emittente"
+        }
+    },
+    "broadcastingProduct": {
+        "index": {
+            "title": "BroadcastingProduct"
+        },
+        "detail": {
+            "title": "BroadcastingProduct"
+        }
+    },
+    "broadcastingTabRegion": {
+        "index": {
+            "title": "BroadcastingTabRegion"
+        },
+        "detail": {
+            "title": "BroadcastingTabRegion"
+        }
+    },
+    "category": {
+        "index": {
+            "title": "Categorie"
+        },
+        "detail": {
+            "title": "Categoria"
+        }
+    },
+    "commission": {
+        "index": {
+            "title": "Commissioni"
+        },
+        "detail": {
+            "title": "Commissione"
+        }
+    },
+    "company": {
+        "index": {
+            "title": "Compagnie"
+        },
+        "detail": {
+            "title": "Compagnia"
+        }
+    },
+    "companyDocument": {
+        "index": {
+            "title": "CompanyDocument"
+        },
+        "detail": {
+            "title": "CompanyDocument"
+        }
+    },
+    "configuration": {
+        "index": {
+            "title": "Impostazioni"
+        },
+        "detail": {
+            "title": "Impostazione compagnia"
+        }
+    },
+    "customer": {
+        "index": {
+            "title": "Clienti"
+        },
+        "detail": {
+            "title": "Cliente",
+            "personal": "Anagrafica",
+            "birth": "Nascita",
+            "residence": "Residenza",
+            "identification": "Identificazione",
+            "product": "Prodotto",
+            "broadcasting": "Emittenete"
+        },
+        "searchModal": {
+            "add": "Nuova anagrafica"
+        },
+        "upload": {
+            "title": "Caricamento massivo clienti",
+            "personsCreated": "Clienti creati: {{count}}",
+            "personsErrors": "Clienti in errore: {{count}}"
+        },
+        "tabs": {
+            "personalData": "Anagrafica",
+            "customerCalls": "Elenco chiamate"
+        },
+        "calls": "Elenco chiamate"
+    },
+    "customerCall": {
+        "index": {
+            "title": "Chiamate cliente"
+        },
+        "detail": {
+            "title": "Chiamata cliente"
+        }
+    },
+    "measure": {
+        "index": {
+            "title": "Misure"
+        },
+        "detail": {
+            "title": "Misura"
+        }
+    },
+    "personUpload": {
+        "index": {
+            "title": "Upload clienti"
+        },
+        "detail": {
+            "title": "Upload clienti",
+            "titleWithErrors": "Clienti non importati",
+            "titleWithSuccess": "Clienti importati con successo"
+        }
+    },
+    "document": {
+        "index": {
+            "title": "Documenti"
+        },
+        "detail": {
+            "title": "Documento"
+        }
+    },
+    "environment": {
+        "index": {
+            "title": "Ambienti"
+        },
+        "detail": {
+            "title": "Ambiente"
+        }
+    },
+    "eventType": {
+        "index": {
+            "title": "Tipi evento"
+        },
+        "detail": {
+            "title": "Tipo evento"
+        }
+    },
+    "grouping": {
+        "index": {
+            "title": "Gruppi"
+        },
+        "detail": {
+            "title": "Gruppi"
+        }
+    },
+    "groupingAuth": {
+        "index": {
+            "title": "Autorizzazioni gruppo"
+        },
+        "detail": {
+            "title": "Autorizzazione gruppo"
+        }
+    },
+    "groupingGrant": {
+        "index": {
+            "title": "GroupingGrant"
+        },
+        "detail": {
+            "title": "GroupingGrant"
+        }
+    },
+    "investment": {
+        "index": {
+            "title": "Investment"
+        },
+        "detail": {
+            "title": "Investment"
+        }
+    },
+    "logAccess": {
+        "index": {
+            "title": "Accessi"
+        },
+        "detail": {
+            "title": "Log accesso"
+        }
+    },
+    "logChange": {
+        "index": {
+            "title": "Change"
+        },
+        "detail": {
+            "title": "Log change"
+        }
+    },
+    "logError": {
+        "index": {
+            "title": "Errori"
+        },
+        "detail": {
+            "title": "Log errore"
+        }
+    },
+    "logQuery": {
+        "index": {
+            "title": "Query"
+        },
+        "detail": {
+            "title": "Log query"
+        }
+    },
+    "order": {
+        "index": {
+            "title": "Ordini"
+        },
+        "detail": {
+            "title": "Ordine"
+        }
+    },
+    "notification": {
+        "index": {
+            "title": "Notifiche"
+        },
+        "detail": {
+            "title": "Notifica"
+        },
+        "panel": {
+            "title": "Notifiche",
+            "unread": "Hai {{count}} notifica non letta",
+            "unread_plural": "Hai {{count}} notifiche non lette",
+            "markRead": "Segna tutte come lette",
+            "new": "NUOVE",
+            "last": "ULTIME NOTIFICHE",
+            "viewAll": "VEDI TUTTE",
+            "time": {
+                "0": "Qualche minuto fa",
+                "1": "Un'ora fa",
+                "2": "Due ore fa",
+                "3": "Tre ore fa",
+                "4": "Quattro ore fa",
+                "5": "Cinque ore fa",
+                "6": "Qualche ora fa",
+                "7": "Un giorno fa",
+                "8": "Qualche giorno fa",
+                "9": "Qualche settimana fa",
+                "10": "Qualche mese fa"
+            }
+        }
+    },
+    "notificationTemplate": {
+        "index": {
+            "title": "Template notifiche"
+        },
+        "detail": {
+            "title": "Template notifica"
+        }
+    },
+    "personRequiredField": {
+        "index": {
+            "title": "Campi anag. obbligatori"
+        },
+        "detail": {
+            "title": "Campi anagrafici obbligatori"
+        }
+    },
+    "principal": {
+        "index": {
+            "title": "Utenti"
+        },
+        "detail": {
+            "title": "Utente",
+            "usernameExisting": "Username non disponibile",
+            "principalAuthMissing": "Autorizzazioni utente non definite"
+        },
+        "upload": {
+            "title": "Caricamento massivo utenti",
+            "usersCreated": "Utenti creati: {{count}}",
+            "usersErrors": "Utenti in errore: {{count}}"
+        }
+    },
+    "principalAuth": {
+        "index": {
+            "title": "Autorizzazioni prodotti"
+        },
+        "detail": {
+            "title": "Autorizzazione prodotto"
+        }
+    },
+    "principalTabRegion": {
+        "index": {
+            "title": "Autorizzazioni regioni"
+        },
+        "detail": {
+            "title": "Autorizzazione regione"
+        }
+    },
+    "principalCertificate": {
+        "index": {
+            "title": "Certificati"
+        },
+        "detail": {
+            "title": "Certificato"
+        }
+    },
+    "principalGrant": {
+        "index": {
+            "title": "PrincipalGrant"
+        },
+        "detail": {
+            "title": "PrincipalGrant"
+        }
+    },
+    "principalGrouping": {
+        "index": {
+            "title": "Gruppi"
+        },
+        "detail": {
+            "title": "Gruppo"
+        }
+    },
+    "product": {
+        "index": {
+            "title": "Prodotti"
+        },
+        "detail": {
+            "title": "Prodotto"
+        }
+    },
+    "region": {
+        "index": {
+            "title": "Region"
+        },
+        "detail": {
+            "title": "Region"
+        }
+    },
+    "resourceGrant": {
+        "index": {
+            "title": "ResourceGrant"
+        },
+        "detail": {
+            "title": "ResourceGrant"
+        }
+    },
+    "formpdf": {
+        "index": {
+            "title": "Form PDF"
+        }
+    },
+    "statistics": {
+        "salesman": {
+            "index": {
+                "title": "Statistiche venditore"
+            }
+        },
+        "callcenter": {
+            "index": {
+                "title": "Statistiche call center"
+            }
+        }
+    },
+    "warehouse": {
+        "index": {
+            "title": "Magazzini"
+        },
+        "detail": {
+            "title": "Magazzino"
+        }
+    },
+    "warehouseType": {
+        "index": {
+            "title": "Tipi magazzino"
+        },
+        "detail": {
+            "title": "Tipo magazzino"
+        }
+    }
+}

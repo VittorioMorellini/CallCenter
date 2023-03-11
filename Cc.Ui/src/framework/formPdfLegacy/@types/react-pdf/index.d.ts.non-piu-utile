@@ -1,0 +1,12 @@
+// /// <reference types="node" />
+
+declare module 'react-pdf-per-ora-non-mi-serve' {
+
+//     import * as React from 'react';
+
+//     export class Document extends React.Component<any,any>{}
+//     export class Page extends React.Component<any,any> {
+
+//         getAnnotations();
+//     }
+// }

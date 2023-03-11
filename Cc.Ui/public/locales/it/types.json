@@ -1,0 +1,97 @@
+{
+    "broadcastingTypes": {
+        "nationalTv": "Tv nationale",
+        "localTv": "Tv locale",
+        "telemarketing": "Telemarketing",
+        "paper": "Giornale",
+        "web": "Web"
+    },
+    "dossierField": {
+        "input": "Input",
+        "date": "Date",
+        "switch": "Switch",
+        "autocomplete": "Autocomplete"
+    },
+    "dossierFieldValue": {
+        "text": "Text",
+        "query": "Query",
+        "json": "Json"
+    },
+    "reason": {
+        "keyword": "Keyword",
+        "field": "Field",
+        "absolute": "Coordinate",
+        "interactive": "Interattive"
+    },
+    "trustLevel": {
+        "notDefined": "Non definito",
+        "feq": "FEQ",
+        "fes": "FES",
+        "fea": "FEA"
+    },
+    "identityDocument": {
+        "identityCard": "Carta di identità",
+        "drivingLicense": "Patente di guida",
+        "passport": "Passaporto"
+    },
+    "dossierProcess":{
+        "onboarding": "Riconoscimento",
+        "subscription": "Sottoscrizione",
+        "both": "Riconoscimento / sottoscrizione"
+    },
+    "notification": {
+        "type": {
+            "email": "Email",
+            "appMessage": "Messaggio in app"
+        },
+        "category": {
+            "SIGN_LINK": "Link di firma",
+            "SELF_LINK": "Link di firma self identification",
+            "DOCU_COMP_LINK": "Link document composition",
+            "DOSSIER_COMPLETED": "Dossier completato",
+            "DOSSIER_ERROR": "Dossier in errore",
+            "DOCUMENTS_SIGNED": "Documenti firmati",
+            "DOCUMENTS_SIGNED_SIGNER": "Documenti firmati firmatario",
+            "PRINCIPAL_CREDENTIAL": "Credenziali utente",
+            "SELF_HUMAN_CHECK": "Richiesto intervento umano per validazione dati",
+            "SELF_CUSTOMER_MAIL": "Mail informativa per il cliente"
+        }
+    },
+    "status": {
+        "running": "Running",
+        "queued": "Queued",
+        "error": "Error",
+        "completed": "Completed"
+    },
+    "person": {
+        "external": "Esterno",
+        "internal": "Interno",
+        "principal": "Principal"
+    },
+    "role":{
+        "admin": "ADMIN",
+        "manager": "MANAGER",
+        "operator": "OPERATOR",
+        "salesman": "SALESMAN",
+        "lawyer": "LAWYER",
+        "customer": "CUSTOMER"
+    },
+    "sex": {
+        "male": "Maschio",
+        "female": "Femmina"
+    },
+    "language": {
+        "it": "Italiano",
+        "en": "English"
+    },
+    "principalVisibility": {
+        "personal": "Personali",
+        "agency": "Agenzia",
+        "company": "Compagnia"
+    },
+    "additionalReasons": {
+        "0": "No",
+        "1": "Facoltative",
+        "2": "Obbligatorie"
+    }
+}

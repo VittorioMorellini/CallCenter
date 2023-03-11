@@ -1,0 +1,400 @@
+{
+    "nav": {
+        "operation": "Operation",
+        "configuration": "Configuration",
+        "administration": "Administration",
+        "test": "Test",
+        "log": "Logs",
+        "report": "Statistics" 
+    },
+    "agenda": {
+        "index": {
+            "title": "Agenda"
+        },
+        "detail": {
+            "title": "Dossiers by task"
+        }
+    },
+    "agency": {
+        "index": {
+            "title": "Agencies"
+        },
+        "detail": {
+            "title": "Agency"
+        }
+    },
+    "checklist": {
+        "index": {
+            "title": "Check list"
+        },
+        "detail": {
+            "title": "Check list"
+        }
+    },
+    "area": {
+        "index": {
+            "title": "Area"
+        },
+        "detail": {
+            "title": "Area"
+        }
+    },
+    "broadcasting": {
+        "index": {
+            "title": "Broadcastings"
+        },
+        "detail": {
+            "title": "Broadcasting"
+        }
+    },
+    "broadcastingProduct": {
+        "index": {
+            "title": "BroadcastingProduct"
+        },
+        "detail": {
+            "title": "BroadcastingProduct"
+        }
+    },
+    "broadcastingTabRegion": {
+        "index": {
+            "title": "BroadcastingTabRegion"
+        },
+        "detail": {
+            "title": "BroadcastingTabRegion"
+        }
+    },
+    "category": {
+        "index": {
+            "title": "Category"
+        },
+        "detail": {
+            "title": "Category"
+        }
+    },
+    "commission": {
+        "index": {
+            "title": "Commission"
+        },
+        "detail": {
+            "title": "Commission"
+        }
+    },
+    "company": {
+        "index": {
+            "title": "Companies"
+        },
+        "detail": {
+            "title": "Company"
+        }
+    },
+    "companyDocument": {
+        "index": {
+            "title": "Company documents"
+        },
+        "detail": {
+            "title": "Company document"
+        }
+    },
+    "configuration": {
+        "index": {
+            "title": "Settings"
+        },
+        "detail": {
+            "title": "Settings"
+        }
+    },
+    "customer": {
+        "index": {
+            "title": "Customers"
+        },
+        "detail": {
+            "title": "Customer",
+            "personal": "Personal",
+            "birth": "Birth",
+            "residence": "Residence",
+            "identification": "Identification",
+            "product": "Product",
+            "broadcasting": "Broadcasting"
+        },
+        "searchModal": {
+            "add": "New customer"
+        },
+        "upload": {
+            "title": "Customer massive import",
+            "personsCreated": "Customers created: {{count}}",
+            "personsErrors": "Customers in error: {{count}}"
+        },
+        "tabs": {
+            "personalData": "Personal data",
+            "customerCalls": "Calls list"
+        },
+        "calls": "Calls list"
+    },
+    "customerCall": {
+        "index": {
+            "title": "Customer Calls"
+        },
+        "detail": {
+            "title": "Customer Call"
+        }
+    },
+    "measure": {
+        "index": {
+            "title": "Measure"
+        },
+        "detail": {
+            "title": "Measure"
+        }
+    },
+    "document": {
+        "index": {
+            "title": "Documents"
+        },
+        "detail": {
+            "title": "Document"
+        }
+    },
+    "environment": {
+        "index": {
+            "title": "Environments"
+        },
+        "detail": {
+            "title": "Environment"
+        }
+    },
+    "eventType": {
+        "index": {
+            "title": "EventType"
+        },
+        "detail": {
+            "title": "EventType"
+        }
+    },
+    "grouping": {
+        "index": {
+            "title": "Groups"
+        },
+        "detail": {
+            "title": "Groups"
+        }
+    },
+    "groupingAuth": {
+        "index": {
+            "title": "Authorizations"
+        },
+        "detail": {
+            "title": "Authorization"
+        }
+    },
+    "groupingGrant": {
+        "index": {
+            "title": "GroupingGrant"
+        },
+        "detail": {
+            "title": "GroupingGrant"
+        }
+    },
+    "investment": {
+        "index": {
+            "title": "Investment"
+        },
+        "detail": {
+            "title": "Investment"
+        }
+    },
+    "logAccess": {
+        "index": {
+            "title": "Access"
+        },
+        "detail": {
+            "title": "Log access"
+        }
+    },
+    "logChange": {
+        "index": {
+            "title": "Change"
+        },
+        "detail": {
+            "title": "Log change"
+        }
+    },
+    "logError": {
+        "index": {
+            "title": "Errors"
+        },
+        "detail": {
+            "title": "Log error"
+        }
+    },
+    "logQuery": {
+        "index": {
+            "title": "Query"
+        },
+        "detail": {
+            "title": "Log query"
+        }
+    },
+    "order": {
+        "index": {
+            "title": "Orders"
+        },
+        "detail": {
+            "title": "Order"
+        }
+    },
+    "notification": {
+        "index": {
+            "title": "Notifications"
+        },
+        "detail": {
+            "title": "Notification"
+        },
+        "panel": {
+            "title": "Notifications",
+            "unread": "You have {{count}} unread message",
+            "unread_plural": "You have {{count}} unread messages",
+            "markRead": "Mark all as read",
+            "new": "NEW",
+            "last": "LAST NOTIFICATIONS",
+            "viewAll": "VIEW ALL",
+            "time": {
+                "0": "Some minutes ago",
+                "1": "An hour ago",
+                "2": "Two hours ago",
+                "3": "Three hours ago",
+                "4": "Four hours ago",
+                "5": "Five hours ago",
+                "6": "Some hours ago",
+                "7": "A day ago",
+                "8": "Some days ago",
+                "9": "Some weeks ago",
+                "10": "Some months ago"
+            }
+        }
+    },
+    "notificationTemplate": {
+        "index": {
+            "title": "Notification templates"
+        },
+        "detail": {
+            "title": "Notification template"
+        }
+    },
+    "personRequiredField": {
+        "index": {
+            "title": "Person required fields"
+        },
+        "detail": {
+            "title": "Person required field"
+        }
+    },
+    "principal": {
+        "index": {
+            "title": "Users"
+        },
+        "detail": {
+            "title": "User",
+            "usernameExisting": "Username not available",
+            "principalAuthMissing": "User authorization is missing"
+        },
+        "upload": {
+            "title": "Import users from csv",
+            "usersCreated": "Users created: {{count}}",
+            "usersErrors": "Users in error: {{count}}"
+        }
+    },
+    "principalAuth": {
+        "index": {
+            "title": "Products Authorization"
+        },
+        "detail": {
+            "title": "Product Authorization"
+        }
+    },
+    "principalTabRegion": {
+        "index": {
+            "title": "Regions Authorization"
+        },
+        "detail": {
+            "title": "Region Authorization"
+        }
+    },
+    "principalGrant": {
+        "index": {
+            "title": "Principal grants"
+        },
+        "detail": {
+            "title": "Principal grant"
+        }
+    },
+    "principalGrouping": {
+        "index": {
+            "title": "Groups"
+        },
+        "detail": {
+            "title": "Group"
+        }
+    },
+    "product": {
+        "index": {
+            "title": "Products"
+        },
+        "detail": {
+            "title": "Product"
+        }
+    },
+    "region": {
+        "index": {
+            "title": "Regions"
+        },
+        "detail": {
+            "title": "Region"
+        }
+    },
+    "resourceGrant": {
+        "index": {
+            "title": "Resource grants"
+        },
+        "detail": {
+            "title": "Resource grant"
+        }
+    },
+    "formpdf": {
+        "index": {
+            "title": "PDF Form"
+        }
+    },
+    "dcomp": {
+        "index": {
+            "title": "Document Form"
+        }
+    },
+    "statistics": {
+        "salesman": {
+            "index": {
+                "title": "Statistics by salesman"
+            }
+        },
+        "callcenter": {
+            "index": {
+                "title": "Call center statistics"
+            }
+        }
+    },
+    "warehouse": {
+        "index": {
+            "title": "Warehouse"
+        },
+        "detail": {
+            "title": "Warehouse"
+        }
+    },
+    "warehouseType": {
+        "index": {
+            "title": "WarehouseType"
+        },
+        "detail": {
+            "title": "WarehouseType"
+        }
+    }
+}
