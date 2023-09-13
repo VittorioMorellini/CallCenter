@@ -94,8 +94,7 @@ export function useAppActions() {
                 pending: ()             => <Action> { type: 'APP/LOGIN_PENDING' },
                 success: ()             => <Action> { type: 'APP/LOGIN_SUCCESS' },
                 failure: (error: any)   => <Action> { type: 'APP/LOGIN_FAILURE', error }
-            };
-    
+            };    
             // console.log('STEP', step)
             // if (step !== Step.NONE)
             //     return  Promise.reject('LOGIN ALREADY DONE');
