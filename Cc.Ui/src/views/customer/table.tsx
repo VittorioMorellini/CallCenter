@@ -37,7 +37,7 @@ export default ({
     //console.log('customerCalls', customerCalls)
     const sortCalls = (calls: CustomerCall[]) => {
         let myCalls: CustomerCall[] = _.sortBy(calls, x => x.callDate);
-        return myCalls.at(myCalls.length - 1).callDate
+        return myCalls.at(myCalls.length - 1)?.callDate
     }
     return (
         <TableView

@@ -146,7 +146,7 @@ export const AppView = ({
                 <AppBar position="sticky" className={classes.appBar}>
                     <Toolbar>
                         <div className={classes.logoBar}>
-                            <img src={`${process.env.REACT_APP_BASE_URL}/images/logo_sixtema.png`} height={32} className={classes.logo} />
+                            <img src={`${process.env.REACT_APP_BASE_URL}/images/logo.png`} height={32} className={classes.logo} title='Logo'/>
                         </div>
                     </Toolbar>
                 </AppBar>

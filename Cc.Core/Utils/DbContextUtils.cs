@@ -5,19 +5,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Common;
-using System.Data.SqlClient;
-//using Z.EntityFramework.Extensions;
+using Microsoft.Data.SqlClient;
 
 namespace Cc.Core.Utils
 {
     public static class DbContextUtils
     {
-        static DbContextUtils()
-        {
-            //Z.EntityFramework.Extensions.LicenseManager.AddLicense("2907;101-Sixtema", "da204260-a12d-2135-7628-1ad431e513f8");
-            //if (!Z.EntityFramework.Extensions.LicenseManager.ValidateLicense(out string licenseErrorMessage))
-            //    throw new Exception(licenseErrorMessage);
-        }
+        //static DbContextUtils()
+        //{
+        //    //Z.EntityFramework.Extensions.LicenseManager.AddLicense("", "");
+        //    //if (!Z.EntityFramework.Extensions.LicenseManager.ValidateLicense(out string licenseErrorMessage))
+        //    //    throw new Exception(licenseErrorMessage);
+        //}
 
         [Obsolete]
         public static void AddOrUpdate<TEntity, TKey>(this DbContext context, TKey id, TEntity entity)

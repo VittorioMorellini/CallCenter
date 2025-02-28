@@ -34,7 +34,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     logo: {
         display: 'block', 
         margin: '0 auto',
-        maxWidth: '480px',
+        maxWidth: '460px',
+        maxHeight: '400px',
         [theme.breakpoints.down('sm')]: {
             maxWidth: '360px',
         }
@@ -121,7 +122,7 @@ function LoginView() {
             <div className={classes.root} onKeyDown={onKeyDown}>
                 <div className={classes.container}>
                     <div className={classes.content}>
-                        <img src="images/logo.png" className={classes.logo} />
+                        <img src="images/logo_login.png" className={classes.logo} title='Login'/>
                         <Typography variant="h3" className={classes.text}>{process.env.REACT_APP_TITLE}</Typography>                     
                         <form className={classes.form}>
                             <Box >
