@@ -5,13 +5,13 @@
     <li>
       <a href="#about-the-project">This a call center web application</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Built With dotnet and React 18</a></li>
       </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#prerequisites">Prerequisites dotnet 8</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
@@ -27,17 +27,18 @@
 
 This project is a call center created with dotnet and React for the UI.
 
-The target is to offer a way to manage all the call received by the 
+The target is to offer a way to manage all the call received after media advertising
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
-The project is written in dotnet. The version on the framework is dotnet 9.
+The project is written in dotnet. The version on the framework is dotnet 8 for the api.
 
-There is also Aspire dashboard to take confidence with this microsoft magic
+React 18 for the UI
 
 * [![dotnet][.Net9]][dotnet-url]
+* [![react][react.js]][react-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -60,7 +61,7 @@ The prerequisites is to have installed net 9 framework.
    ```
 3. Change git remote url to avoid accidental pushes to base project
    ```sh
-   git remote set-url origin vittoriomorellini/offerteblazor
+   git remote set-url origin vittoriomorellini/callcenter
    git remote -v # confirm the changes
    ```
 You just net framework dotnet 9 in any operating system.
