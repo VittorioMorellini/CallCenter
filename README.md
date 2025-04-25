@@ -38,7 +38,7 @@ The project is written in dotnet. The version on the framework is dotnet 8 for t
 React 18 for the UI
 
 * [![dotnet][.Net9]][dotnet-url]
-* [![react][react.js]][react-url]
+* [![React][React.js]][React-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
