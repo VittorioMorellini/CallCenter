@@ -55,7 +55,7 @@ The prerequisites is to have installed net 8 framework.
 
 ### Installation
 
-1. The project is written in blazor server, dotnet 9
+1. The project is written in blazor server, dotnet 8
 2. Clone the repo
    ```sh
    git clone https://github.com/vittoriomorellini/callcenter.git
@@ -65,7 +65,7 @@ The prerequisites is to have installed net 8 framework.
    git remote set-url origin vittoriomorellini/callcenter
    git remote -v # confirm the changes
    ```
-You just net framework dotnet 9 in any operating system.
+You just net framework dotnet 8 in any operating system.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -74,9 +74,9 @@ You just net framework dotnet 9 in any operating system.
 
 To run the projet from the command line type: dotnet run from the root of OfferteWeb directory.
 
-In Visual Studio run the web project OfferteWeb in http. This is a Web application.
+In Visual Studio run the api project cc.api in http. This is a Web api application.
 
-You need local SqlServer
+You need local SqlServer for the database
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
