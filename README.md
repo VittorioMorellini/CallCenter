@@ -37,7 +37,7 @@ The project is written in dotnet. The version on the framework is dotnet 8 for t
 
 React 18 for the UI
 
-* [![dotnet][.Net9]][dotnet-url]
+* [![dotnet][.Net8]][dotnet-url]
 * [![React][React.js]][React-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -46,11 +46,12 @@ React 18 for the UI
 ## Getting Started
 
 This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+
+After cloning the repo you have to start both: api and the Ui, ad esemple with visual studio code the UI
 
 ### Prerequisites
 
-The prerequisites is to have installed net 9 framework.
+The prerequisites is to have installed net 8 framework.
 
 ### Installation
 
