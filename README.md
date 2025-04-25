@@ -72,7 +72,7 @@ You just net framework dotnet 8 in any operating system.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-To run the projet from the command line type: dotnet run from the root of OfferteWeb directory.
+To run the projet from the command line type: dotnet run from the root of dotnet cc.api project directory.
 
 In Visual Studio run the api project cc.api in http. This is a Web api application.
 
