@@ -47,14 +47,14 @@ const baseActions = (logger: Logger, dispatch: any, root: RootState, enhanceMode
             root.service.principal.usernameExists(username)
         );
     },
-    createUser: (item: Principal) => {
-        return api(item)(
-            K.CREATE_USER,
-            logger,
-            dispatch,
-            root.service.principal.createUser(item)
-        );            
-    },
+    // createUser: (item: Principal) => {
+    //     return api(item)(
+    //         K.CREATE_USER,
+    //         logger,
+    //         dispatch,
+    //         root.service.principal.createUser(item)
+    //     );            
+    // },
 })
 
 export const usePrincipalActions = () => {
@@ -91,19 +91,19 @@ export type PrincipalState = EntityLoaderState<Principal, PrincipalSearchModel>
 
 export const principalReducer: Reducer<PrincipalState, any> = typeToReducer({
     ...EntityReducer(key),
-    [K.CREATE_USER]: {
-        PENDING: (state: PrincipalState) => setState(state, {
-            isBusy: true
-        }),
-        SUCCESS: (state: PrincipalState, { payload }: any) => setState(state, {
-            isBusy: false,
-            items: ListUtils.addOrReplace(state.items, x => x.id === payload.id, payload),
-            currentItem: payload
-        }),
-        FAILURE: (state: PrincipalState) => setState(state, {
-            isBusy: false
-        })
-    },    
+    // [K.CREATE_USER]: {
+    //     PENDING: (state: PrincipalState) => setState(state, {
+    //         isBusy: true
+    //     }),
+    //     SUCCESS: (state: PrincipalState, { payload }: any) => setState(state, {
+    //         isBusy: false,
+    //         items: ListUtils.addOrReplace(state.items, x => x.id === payload.id, payload),
+    //         currentItem: payload
+    //     }),
+    //     FAILURE: (state: PrincipalState) => setState(state, {
+    //         isBusy: false
+    //     })
+    // },    
 }, EntityLoaderInitialState({ searchModel: new PrincipalSearchModel() }));
 
 function setState(prevState: PrincipalState, newState: Partial<PrincipalState>) {

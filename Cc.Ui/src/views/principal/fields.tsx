@@ -8,7 +8,6 @@ import { useLocalDocumentActions } from '../../core/document';
 import { useDetailMode } from '../../framework/hooks';
 import { autocompleteOptions, Field } from '../../framework/ui/form';
 import { UploadFile } from '../../framework/ui/form/types';
-import { DateUtils } from '../../framework/utils';
 import { Principal } from '../../models';
 import {Document} from '../../models/document';
 
@@ -17,7 +16,6 @@ type Props = {
     setItem: (obj: Principal) => void
     onUploadCompleted?: () => void;
 }
-
 export default ({ item, setItem, onUploadCompleted }: Props) => { 
     const { isAdmin } = useIdentity();
     const { actions: documentActions } = useLocalDocumentActions();

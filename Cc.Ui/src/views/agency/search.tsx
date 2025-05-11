@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useFormItem } from '../../framework/hooks';
 import { SearchView } from '../../framework/ui';
@@ -6,22 +5,11 @@ import { Field } from '../../framework/ui/form';
 import { RootState } from '../../app/reducers';
 import { AgencySearchModel } from '../../models';
 import { useAgencyActions } from '../../core/agency';
-import { useIdentity } from '../../app/core/hooks';
-import { useTranslation } from 'react-i18next';
-//import { useTabCityActions } from '../../core/tabCity';
 
 export default (props: any): JSX.Element => {
-
     const { actions } = useAgencyActions();
     const model = useSelector((root: RootState) => root.agency.searchModel);
     const [item, setItem] = useFormItem(model);
-    const { isAdmin } = useIdentity();
-    const companies = useSelector((state: RootState) => state.lookup.companies);
-    const { t }  = useTranslation();
-    //const { countries, districts } = useSelector((root: RootState) => root.lookup);
-    //const [ cities, setCities ] = useState<TabCity[]>([]);
-    //const { actions: cityActions } = useTabCityActions();
-    const [ loading, setLoading ] = useState(false);
 
     const handler = {
         search: (x: AgencySearchModel) => {
@@ -34,11 +22,9 @@ export default (props: any): JSX.Element => {
             }
         }
     }
-
     // useEffect(() => {        
     //     if (!item.provinceCode)
-    //          return;
-        
+    //          return;        
     //     const model = new TabCitySearchModel();
     //     model.districtCode = item.provinceCode;
     //     cityActions.search(model)

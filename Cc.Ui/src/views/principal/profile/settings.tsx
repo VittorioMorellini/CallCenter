@@ -42,13 +42,13 @@ export default (props: any) => {
             if (isInsert) {
                 actions.usernameExists(item.username)
                     .then((exists: boolean) => {
-                        if (!exists) {
-                            actions.createUser(item)
-                                .then(handler.navigateBack)
-                                .catch(() => { })
-                        } else {
-                            logger.error(t('views:principal.detail.usernameExisting'));
-                        }
+                        // if (!exists) {
+                        //     actions.createUser(item)
+                        //         .then(handler.navigateBack)
+                        //         .catch(() => { })
+                        // } else {
+                        //     logger.error(t('views:principal.detail.usernameExisting'));
+                        // }
                     })
                     .catch(() => { })
             } else {

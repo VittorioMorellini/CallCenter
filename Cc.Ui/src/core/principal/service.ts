@@ -16,9 +16,9 @@ export class PrincipalService extends BaseService<Principal> {
         return fetch(`${this.endpoint}/exists/${username}`, this.createGetFetchOptions())
             .then(this.asJson);
     }
-    createUser(model: Principal) {
-        return fetch(this.endpoint + '/user', this.createJsonFetchOptions('POST', model))
-            .then(this.asItem(Principal));
-    }
+    // createUser(model: Principal) {
+    //     return fetch(this.endpoint + '/user', this.createJsonFetchOptions('POST', model))
+    //         .then(this.asItem(Principal));
+    // }
 
 }

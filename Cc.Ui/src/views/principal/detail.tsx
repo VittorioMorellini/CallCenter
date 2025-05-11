@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useNavigate } from 'react-router';
 import { useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
@@ -10,11 +10,9 @@ import { usePrincipalActions } from '../../core/principal';
 import PrincipalAuth from '../principalAuth/relatedModal';
 import PrincipalTabRegion from '../principalTabRegion/relatedModal';
 import Fields from './fields';
-import { DateUtils } from '../../framework/utils';
 import { Principal } from '../../models/principal';
 import { useLocalAgencyActions } from '../../core/agency';
 import { useLookups } from '../../core';
-import { useLocalProductActions } from '../../core/product';
 
 export default (props: any) => {
 
@@ -24,9 +22,8 @@ export default (props: any) => {
     const [item, setItem] = useFormItem<Principal>(props.item || useSelector((root: RootState) => root.principal.currentItem));
     const { id, isUpdate, isInsert } = useDetailMode(item);
     const { actions: agencyActions, state: { items: agencies } } = useLocalAgencyActions();
-    const { products, categories } = useLookups();
+    const { regions, products, categories } = useLookups();
     const { actions, logger } = usePrincipalActions();
-    const { regions } = useLookups();
 
     useEffect(() => {
         if (isUpdate) {
