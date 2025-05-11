@@ -48,8 +48,7 @@ export default (props: any) => {
         <>
             <Form item={item} handleChange={setItem}>
                 <Fields />
-            </Form>
-            
+            </Form>            
         </>
     );
 

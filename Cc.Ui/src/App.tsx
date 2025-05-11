@@ -73,7 +73,6 @@ function App() {
                     <Router basename={process.env.PUBLIC_URL}>
                         <ErrorBoundary>
                             <RootView />
-                            {/* <MyComponent user={{name: 'vitto'}}/> */}
                         </ErrorBoundary>
                     </Router>
                 </LocalizationProvider>
@@ -81,5 +80,4 @@ function App() {
         </ThemeProvider>
     );
 }
-
 export default App;

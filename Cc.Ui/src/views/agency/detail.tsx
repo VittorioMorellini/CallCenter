@@ -11,7 +11,6 @@ import { Agency } from '../../models';
 import Fields from './fields';
 
 export default (props: any): JSX.Element => {
-
     const history = useNavigate();
     const { t } = useTranslation();
     const isBusy = useSelector((root: RootState) => root.agency.isBusy);
@@ -25,7 +24,6 @@ export default (props: any): JSX.Element => {
             actions.find(id).catch(() => { });
         }
     }, [id]);
-
     const handler = {
         navigateBack: () => {
             history(-1);
@@ -42,7 +40,6 @@ export default (props: any): JSX.Element => {
                 .catch(() => { });
         }
     };
-
     const content = (
         <Panel>
             <Form item={item} handleChange={setItem}>
@@ -50,7 +47,6 @@ export default (props: any): JSX.Element => {
             </Form>
         </Panel>
     );
-
     return (
         <DetailView 
             title={t('views:agency.detail.title')}

@@ -11,7 +11,6 @@ type Props = {
     idMaster: number;
     items?: Customer[];
 }
-
 function RelatedModalView ({ idMaster, items }: Props) {
 
     const { t } = useTranslation();

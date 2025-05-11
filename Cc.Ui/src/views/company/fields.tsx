@@ -10,7 +10,7 @@ export default () => (
             <Field.Input model={(x: Company) => x.vatCode}  />
             <Field.Input
                 model={(x: Company) => x.mail}
-                helper="Questo campo verrà utilizzato per le eventuali comunicazioni di completamento dossier, è possibile specificare più indirizzi separatati da ; (punto e virgola)."
+                helper="Questo campo verrà utilizzato per le eventuali comunicazioni di completamento ordini, è possibile specificare più indirizzi separatati da ; (punto e virgola)."
             />
             {/* <Field.Input model={(x: Company) => x.pdfPassword} 
                 ControlProps={{type: 'password'}}

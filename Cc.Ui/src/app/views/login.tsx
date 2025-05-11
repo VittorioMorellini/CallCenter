@@ -81,8 +81,8 @@ function LoginView() {
         actions.login(username, password)
             .then(() => {
                 navigate('/');
-                console.log('route principal')
-                actions.navigate('/principal')
+                //console.log('route principal')
+                //actions.navigate('/principal')
             })
             .catch((error: any) => console.log(error));
     };

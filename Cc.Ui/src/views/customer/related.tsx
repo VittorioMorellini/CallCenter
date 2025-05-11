@@ -10,7 +10,6 @@ type Props = {
     idMaster: number;
     items?: Customer[];
 }
-
 function RelatedView ({ idMaster, items }: Props) {
 
     const navigate = useNavigate();
@@ -53,5 +52,4 @@ function RelatedView ({ idMaster, items }: Props) {
         </Panel>
     );
 }
-
 export default RelatedView;

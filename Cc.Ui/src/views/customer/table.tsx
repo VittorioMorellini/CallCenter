@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
 import { TableCell } from '@mui/material';
@@ -7,10 +6,8 @@ import { RootState } from '../../app/reducers';
 import { Customer } from '../../models';
 import { useIdentity } from '../../app/core/hooks';
 import { DateUtils } from '../../framework/utils';
-import { Check as ConfirmIcon } from '@mui/icons-material';
 import { PageLoader } from '../../framework/core/types';
 import { CustomerCall } from '../../models/customerCall';
-import { useLocalCustomerCallActions } from '../../core/customerCall';
 import _ from 'lodash'
 
 type Props = {
