@@ -11,7 +11,6 @@ import Table from './table';
 import { BrowserHistory } from 'history';
 
 export default (props: any) => {
-
     const history = useNavigate();
     const { t } = useTranslation();
     const { actions } = useCompanyActions();
@@ -34,13 +33,11 @@ export default (props: any) => {
             history('/company/' + item.id);
         }
     }
-
     const content = (
         <Panel title={t('common:results')}>
             <Table onItemClick={handler.itemClick} />
         </Panel>
     );
-
     return (
         <IndexView 
             title={t('views:company.index.title')}
