@@ -61,7 +61,7 @@ export function Card({id, text, moveCard, findCard}: CardProps) {
     <div>
       <h1>Titolo della Card</h1>
       <div>
-        <img src="/images/logo.png" width={500} height={400}></img>
+        <img src="/images/logo.png" width={500} height={400} title="Logo"></img>
       </div>
       <div>
         Hello

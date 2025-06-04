@@ -1,6 +1,5 @@
 import { BaseService } from '../../framework/core/service';
 import { Principal } from '../../models';
-import { PrincipalUpload, PrincipalUploadResult } from '../../models/principal';
 
 export class PrincipalService extends BaseService<Principal> {
 

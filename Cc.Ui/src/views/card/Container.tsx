@@ -1,8 +1,5 @@
-import { FC, memo, useCallback, useState } from 'react'
-//import { useDrop } from 'react-dnd'
-import { Card } from './Card'
+import { useCallback, useState } from 'react'
 import update from 'immutability-helper'
-import { ItemTypes } from './ItemTypes'
 
 const style = {
   width: 400,

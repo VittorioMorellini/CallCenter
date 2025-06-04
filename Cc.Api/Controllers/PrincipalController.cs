@@ -31,7 +31,7 @@ namespace Cc.api.Controllers
 
         [HttpPost("search")]
         [EnhanceModelFilter]
-        public IActionResult Search([FromBody] PrincipalSearchModel model)
+        public ActionResult<Principal> Search([FromBody] PrincipalSearchModel model)
         {
             return ServiceResult.Execute(() => service.Search(model));
         }
