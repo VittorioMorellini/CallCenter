@@ -45,7 +45,7 @@ export default (props: any) => {
             if (isInsert) {
                 actions.usernameExists(item.username)
                     .then((exists: boolean) => {
-                        console.log('after exists')
+                        // console.log('after exists')
                         if (!exists) {
                             console.log('I gonna save the data')
                             actions.save(item)

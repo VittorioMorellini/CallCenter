@@ -138,19 +138,19 @@ function LayoutView() {
         
     const handleOpenDrawer = () => {
         var newDrawerState: boolean = !toggleDrawer;
-        console.log('toggleDrawer before', toggleDrawer)
+        // console.log('toggleDrawer before', toggleDrawer)
         actions.toggleDrawer(!toggleDrawer)
-        console.log('toggleDrawer after in handle', toggleDrawer)
+        // console.log('toggleDrawer after in handle', toggleDrawer)
     }
 
     useEffect(() => {
-        console.log('toggleDrawer use effect', toggleDrawer)
+        // console.log('toggleDrawer use effect', toggleDrawer)
         if (!toggleDrawer)
             actions.toggleDrawer(true)
     }, [])
     
     useEffect(() => {
-        console.log('toggleDrawer use effect', toggleDrawer)
+        // console.log('toggleDrawer use effect', toggleDrawer)
     }, [toggleDrawer])
 
     useEffect(() => { 
@@ -179,7 +179,7 @@ function LayoutView() {
         )
     }
     
-    console.log('toggleDrawer', toggleDrawer)
+    // console.log('toggleDrawer', toggleDrawer)
     return (
         <div className={classes.root} style={{marginLeft: toggleDrawer ? drawerWidth : 0}}> {/* root */}
             <CssBaseline />            

@@ -65,7 +65,7 @@ function App() {
         })
     }, [])
 
-    console.log('app return');
+    //console.log('app return');
     return (
         <ThemeProvider theme={theme}>
             <LoggerServiceProvider>

@@ -97,7 +97,7 @@ function LoginView() {
     
     const onKeyDown = (event: React.KeyboardEvent<HTMLDivElement>): void => {
         // 'keypress' event misbehaves on mobile so we track 'Enter' key via 'keydown' event
-        console.log('do login on key down')
+        // console.log('do login on key down')
         if (event.key === 'Enter') {
           event.preventDefault();
           event.stopPropagation();

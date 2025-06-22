@@ -28,10 +28,10 @@ export default (props: any) => {
     ];
 
     useEffect(() => {
-        console.log('Promise useeffect')
+        // console.log('Promise useeffect')
         //this works anyway, while waitall fails if anyone of the promise reject
         Promise.allSettled(promises).then(result => {
-            console.log('result', result);
+            //console.log('result', result);
         })
     }, [])
     

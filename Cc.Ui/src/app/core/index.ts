@@ -27,7 +27,7 @@ export function useAppActions() {
 
     const actions = {
         init: async (x?: any): Promise<any> => {
-            console.log('init action')
+            //console.log('init action')
             // per ora forzo la lingua italiana perchè non ho completato le traduzione in inglese
             // e non è presente un'area di impostazioni utente nella quale si possa salvare la propria preferenza
             let { pending, success, failure } = {
@@ -48,7 +48,7 @@ export function useAppActions() {
                 //     actions.setAgency(identity.agencyIds[0]);
                 // Set initial current route
                 // actions.navigate('');
-                console.log('init', x)
+                //console.log('init', x)
                 await actions.lookup();
                 dispatch(success())
 
@@ -104,7 +104,7 @@ export function useAppActions() {
             try {
                 //TODO
                 let identity = await identityActions.authenticate(username, password);
-                console.log('principal from resp', identity)
+                //console.log('principal from resp', identity)
                 localStorage.setItem("token", JSON.stringify(identity.token));                    
                 if (!identity) {
                     let error = 'Username or password is incorrect';

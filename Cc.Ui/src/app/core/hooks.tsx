@@ -1,8 +1,6 @@
-import { useEffect, useMemo } from 'react';
+import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
-import { usePrincipalActions } from '../../core/principal';
-import { useProductActions } from '../../core/product';
 import { TopCountryMode } from '../../models';
 import { RootState } from '../reducers';
 import { NavSection } from '../views/nav';
@@ -13,7 +11,7 @@ export function useIdentity() {
 
     const currentCompanyId = useSelector((root: RootState) => root.app.currentCompanyId);
     const currentAgencyId = useSelector((root: RootState) => root.app.currentAgencyId);
-    console.log('useIdentity', identity)
+    //console.log('useIdentity', identity)
     return useMemo(() => {
 
         let companyId = identity?.companyId || currentCompanyId!;
@@ -40,13 +38,13 @@ export function useConfiguration() {
 
     const { configurations } = useSelector((root: RootState) => root.lookup);
     const { companyId } = useIdentity();
-    console.log('useIdentity useConfiguration get company', companyId)
-    console.log('useIdentity useConfiguration get configurations', configurations)
+    //console.log('useIdentity useConfiguration get company', companyId)
+    //console.log('useIdentity useConfiguration get configurations', configurations)
     return useMemo(() => {
 
         let configuration = configurations.find(x => x.companyId === companyId);
         configuration = configuration ?? configurations.find(x => !x.companyId)!;
-        console.log('useIdentity configurations', configuration)
+        //console.log('useIdentity configurations', configuration)
 
         return {
             ...configuration,

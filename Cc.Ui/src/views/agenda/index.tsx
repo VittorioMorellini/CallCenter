@@ -27,7 +27,7 @@ export default (props: any) => {
     
     useEffect(() => {
         //console.log('use effect history action', navigation.action)
-        console.log('companyId salesman', companyId)
+        // console.log('companyId salesman', companyId)
         if (navigation.action !== 'POP') {
             model.role = Roles.SALESMAN;
             if (companyId && companyId != 0) model.companyId = companyId;
