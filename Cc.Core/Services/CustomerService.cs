@@ -32,8 +32,7 @@ namespace Cc.Core.Services
         {
             return ctx.Customer
                 .Include(x => x.CustomerCall)
-                .Where(x => x.Id == id)
-                .FirstOrDefault();
+                .FirstOrDefault(x => x.Id == id);
         }
 
         public IEnumerable<Customer> Search(CustomerSearchModel model)
