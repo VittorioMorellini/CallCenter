@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 import { Panel, Button, ModalView } from '../../framework/ui';
 import { useBroadcastingActions } from '../../core/broadcasting';
 import { Broadcasting } from '../../models';

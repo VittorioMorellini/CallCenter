@@ -1,6 +1,6 @@
 import { Customer, CustomerTypes, Principal } from '../../models';
 import { useTranslation } from 'react-i18next';
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 import { useLocalCustomerActions, useCustomerActions } from '.';
 import { useConfiguration, useTopCountryMode } from '../../app/core/hooks';
 

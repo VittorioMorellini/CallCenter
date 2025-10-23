@@ -1,23 +1,23 @@
 import * as React from 'react';
-import { Button, Dialog, DialogActions, DialogContent, DialogTitle, Theme, IconButton } from '@mui/material';
-import { StyleRulesCallback, withStyles} from '@mui/styles';
+import { Button, Dialog, DialogActions, DialogContent, DialogTitle, IconButton } from '@mui/material';
+import { withStyles} from '@mui/styles';
 import { i18n } from '../../i18n';
-import { Breakpoint } from '@mui/material/styles';
+import { Breakpoint, Theme } from '@mui/material/styles';
 // import CloseIcon from '@mui/icons-material/Close';
 import InfoIcon from '@mui/icons-material/Info';
 import WarningIcon from '@mui/icons-material/Warning';
 import ErrorIcon from '@mui/icons-material/Error';
 
-import {cyan} from '@mui/material/colors';
-import {amber} from '@mui/material/colors';
-import {red} from '@mui/material/colors';
+import cyan from '@mui/material/colors/cyan';
+import amber from '@mui/material/colors/amber';
+import red from '@mui/material/colors/red';
 
-const styles: StyleRulesCallback<Theme, {}> = (theme: Theme) => ({
+const styles = (theme: Theme) => ({
     dialog: { 
         width: '80%'
     },
     icon: {
-        position: 'absolute',
+        position: 'absolute' as const,
         right: theme.spacing(1),
         top: theme.spacing(1) + 4,
         color: theme.palette.grey[500],
@@ -81,11 +81,11 @@ class BaseDialog extends React.Component<BaseDialogProps, any> {
                 </DialogContent>
                 <DialogActions>
                 <Button onClick={this.props.handleConfirm} color="primary">
-                    {i18n.t('common:ok')}
+                    {String(i18n.t('common:ok'))}
                 </Button>
                 {this.props.handleCancel !== undefined ? (
                     <Button onClick={this.props.handleCancel} color="primary">
-                        {i18n.t('common:cancel')}
+                        {String(i18n.t('common:cancel'))}
                     </Button>
                 ) : null}                
                 </DialogActions>
@@ -93,5 +93,4 @@ class BaseDialog extends React.Component<BaseDialogProps, any> {
         );
     }
 }
-
 export default withStyles(styles)(BaseDialog);

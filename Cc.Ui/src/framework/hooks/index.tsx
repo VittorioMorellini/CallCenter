@@ -2,7 +2,7 @@ import React, { useMemo, Reducer, useReducer } from 'react';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/styles';
 import { Theme } from '@mui/material';
-import { useParams } from 'react-router';
+import { useParams } from 'react-router-dom';
 import { EntityLoaderInitialState } from '../core/reducer';
 
 export function useWidth() {

@@ -8,12 +8,11 @@ import { RootState } from '../../app/reducers';
 import { Step } from './reducer';
 import moment from 'moment';
 import { K } from './reducer';
-import { useNavigate, useLocation } from 'react-router';
-import { i18n } from '../../framework/i18n';
 import { Action } from '../../framework/core/types';
 import { useLocalDocumentActions } from '../../core/document';
 import { AuthenticateResponse } from '../../models/authenticateResponse';
 import { Principal } from '../../models/principal';
+import { useNavigate } from 'react-router-dom';
 
 export function useAppActions() {
 

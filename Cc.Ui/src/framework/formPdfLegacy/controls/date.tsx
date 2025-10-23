@@ -99,7 +99,7 @@ class DateControl<T> extends React.Component<any, any> {
                             {this.displayControl()}
                             <DatePicker 
                                 {...p} 
-                                renderInput={(params) => <TextField {...params} size='small'/>}                                            
+                                renderInput={(params: any) => <TextField {...params} size='small'/>}                                            
                             />
                             <Error />
                         </div>

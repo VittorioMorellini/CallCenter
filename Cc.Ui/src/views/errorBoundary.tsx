@@ -5,8 +5,7 @@ import { i18n } from '../framework/i18n';
 import BaseDialog from '../framework/ui/feedback/dialog';
 import { RootState } from '../app/reducers';
 import { LogError } from '../models/logError';
-import { useNavigate } from 'react-router';
-//import { withNavig } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 
 interface ErrorState {
     hasError: boolean;

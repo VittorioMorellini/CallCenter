@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 import { Panel, Button } from '../../framework/ui';
 import { useMeasureActions } from '../../core/measure';
 import { Measure } from '../../models';

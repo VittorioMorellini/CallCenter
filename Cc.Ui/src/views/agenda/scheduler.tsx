@@ -1,12 +1,13 @@
 import React, {Component, useEffect, useState} from 'react';
 import {Scheduler} from '@aldabil/react-scheduler'
-import moment from 'moment'
-import { DefaultRecourse, ProcessedEvent } from '@aldabil/react-scheduler/dist/types';
+//import ProcessedEvent from '@aldabil/react-scheduler';
+import moment from 'moment';
 import { useLocalAppointmentActions } from '../../core/appointment';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../app/reducers';
 import { Appointment, Principal } from '../../models';
 import { Theme, useTheme } from '@mui/material/styles';
+import { ProcessedEvent } from '@aldabil/react-scheduler/types';
 
 const styles = {
   wrap: {

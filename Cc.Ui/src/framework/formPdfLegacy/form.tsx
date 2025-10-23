@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { Document } from 'react-pdf';
-import { PDFPageProxy, PDFDocumentProxy } from 'pdfjs-dist';
-import { Theme } from '@mui/material';
-import { StyleRulesCallback, withStyles } from '@mui/styles'
+import { Document } from 'react-pdf/dist/esm/entry.webpack5';
+import { PDFPageProxy, PDFDocumentProxy } from 'pdfjs-dist/types/src/display/api';
+import { Theme } from '@mui/material/styles';
+import { withStyles } from '@mui/styles'
 import PlusIcon from '@mui/icons-material/Add';
 import MinusIcon from '@mui/icons-material/Remove';
 import { FieldDefinition, getPageFields, augmentDefinitionFromComponent, entityMetadataFromFieldDefinition } from './utils';
@@ -17,10 +17,10 @@ import LocalizationProvider from '@mui/lab/LocalizationProvider';
 // PDFJS.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.305/pdf.worker.js';
 import itLocale from "date-fns/locale/it";
 
-const styles: StyleRulesCallback<Theme, {}> = (theme: Theme) => ({
+const styles = (theme: Theme) => ({
     root: {
         display: 'flex',
-        flexDirection: 'column',
+        flexDirection: 'column' as const,
         // height: 'calc(100vh - 64px)',
         width: '100%',
         backgroundColor: '#555',
@@ -37,22 +37,22 @@ const styles: StyleRulesCallback<Theme, {}> = (theme: Theme) => ({
     },
     code: {
         margin: 30,
-        overflowX: 'hidden',
+        overflowX: 'hidden' as const,
         maxWidth: '300px',
         flex: 1,
         color: 'rgba(255, 255, 255,  0.8)'
     },
     content: {
         display: 'flex',
-        flexDirection: 'column',
+        flexDirection: 'column' as const,
         flex: 1,
         minHeight: '0px'
     },
     overflowContainer: {
         display: 'flex',
         flex: 1,
-        overflowY: 'auto',
-        overflowX: 'hidden', // il document occupa molto spazio in larghezza se non facessi così avrei lo scroll laterale (molot brutto)
+        overflowY: 'auto' as const,
+        overflowX: 'hidden' as const, // il document occupa molto spazio in larghezza se non facessi così avrei lo scroll laterale (molot brutto)
         padding: '16px'
         // justifyContent: 'center' as JustifyContentProperty
     },
@@ -62,7 +62,7 @@ const styles: StyleRulesCallback<Theme, {}> = (theme: Theme) => ({
     footer: {
     },
     zoomIn: {
-        position: 'fixed',
+        position: 'fixed' as const,
         right: 40, 
         bottom: 40,
         height: 40,
@@ -73,7 +73,7 @@ const styles: StyleRulesCallback<Theme, {}> = (theme: Theme) => ({
         }
     },
     zoomOut: {
-        position: 'fixed', 
+        position: 'fixed' as const, 
         right: 40, 
         bottom: 100,
         height: 40,
@@ -265,19 +265,17 @@ class Form<T> extends React.Component<FormProps<T>, FormState<T>> {
                             ) : null}                        
                             <div className={classes.content}>
                                 <div className={classes.overflowContainer}>
-                                    {document !== undefined ? (
-                                        <Document
-                                            className={classes.document}
-                                            error="Ooops, there was an error loading document!"
-                                            onLoadSuccess={this.onDocumentLoadSuccess} 
-                                            renderMode="svg"
-                                            file={pdfUrl}
-                                        >
-                                            {children !== undefined ? children
-                                            : pages !== undefined ? pages!.map((x: PDFPageProxy, index: number) => <Page key={index} num={x.pageNumber} />) 
-                                            : null}
-                                        </Document>
-                                    ) : null}
+                                    <Document
+                                        className={classes.document}
+                                        error="Ooops, there was an error loading document!"
+                                        //onLoadSuccess={this.onDocumentLoadSuccess} 
+                                        renderMode="svg"
+                                        file={pdfUrl}
+                                    >
+                                        {children !== undefined ? children
+                                        : pages !== undefined ? pages!.map((x: PDFPageProxy, index: number) => <Page key={index} num={x.pageNumber} />) 
+                                        : null}
+                                    </Document>
                                 </div>
                             </div>                    
                             <div className={classes.footer}>
@@ -291,5 +289,4 @@ class Form<T> extends React.Component<FormProps<T>, FormState<T>> {
         );
     }
 }
-
 export default withStyles(styles)(Form);

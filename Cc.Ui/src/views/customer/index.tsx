@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import { UNSAFE_NavigationContext, useNavigate } from 'react-router';
+import { UNSAFE_NavigationContext, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { IndexView, Panel } from '../../framework/ui';
 import { useCustomerActions } from '../../core/customer';

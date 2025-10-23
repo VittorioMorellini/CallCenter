@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { MenuList, MenuItem, ListItemIcon, ListItemText, Typography } from '@mui/material';
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { KeyboardArrowUp as UpIcon, KeyboardArrowDown as DownIcon }  from '@mui/icons-material';
 import { useAppActions } from '../core';

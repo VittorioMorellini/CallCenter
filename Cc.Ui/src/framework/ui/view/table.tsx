@@ -1,9 +1,10 @@
 import React, { useCallback, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Table, TableHead, TableRow, TableCell, TableBody, IconButton, Theme, Tooltip } from '@mui/material';
+import { Table, TableHead, TableRow, TableCell, TableBody, IconButton, Tooltip } from '@mui/material';
 import { Delete as DeleteIcon, PriorityHigh as ErrorIcon } from '@mui/icons-material';
 import { PageLoader } from '../../core/types';
 import {makeStyles} from '@mui/styles'
+import { Theme } from '@mui/material/styles';
 
 const useStyles = makeStyles((theme: Theme) => ({
     root: {
@@ -63,8 +64,8 @@ function TableView<T>({
     rowStyle = rowStyle || ((item: T, index: number) => { return { }});
     let additionalCell = onItemDelete || itemError;
 
-    const observer = useRef<any>();
-    const lastElementRef = useCallback(node => {
+    const observer = useRef<any>(null);
+    const lastElementRef = useCallback((node: any) => {
 
         if (!pageLoader || pageLoader.isLoading) {
             return;
@@ -91,7 +92,7 @@ function TableView<T>({
     const rowRenderer = (row: T, index: number, last: boolean) => (
         <TableRow
             key={index}
-            onClick={e => onItemClick(row, index)}
+            onClick={() => onItemClick(row, index)}
             className={classes.tableRow}
             style={rowStyle!(row, index)}
             ref={last && pageLoader ? lastElementRef : null}

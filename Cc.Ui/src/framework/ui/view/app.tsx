@@ -3,7 +3,7 @@ import { AppBar, Toolbar, useTheme, useMediaQuery, IconButton, SwipeableDrawer, 
 import {makeStyles} from '@mui/styles'
 import MenuIcon from '@mui/icons-material/Menu';
 import { useAppActions } from '../../../app/core';
-import { Navigate, useNavigate, useLocation } from 'react-router';
+import { Navigate, useNavigate, useLocation } from 'react-router-dom';
 import { RootState } from '../../../app/reducers';
 import { useSelector } from 'react-redux';
 import { Step } from '../../../app/core/reducer';

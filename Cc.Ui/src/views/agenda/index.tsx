@@ -1,10 +1,9 @@
 import { useContext, useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { UNSAFE_NavigationContext, useNavigate } from 'react-router';
+import { UNSAFE_NavigationContext, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { IndexView, Panel } from '../../framework/ui';
-import { useLocalPrincipalActions, usePrincipalActions } from '../../core/principal';
-import { Principal, PrincipalSearchModel, Roles} from '../../models';
+import { usePrincipalActions } from '../../core/principal';
+import { Principal, Roles} from '../../models';
 import { RootState } from '../../app/reducers';
 //import Search from './search';
 import Table from './table';

@@ -16,8 +16,9 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import clsx from 'clsx';
 import { useLookups } from '../../core';
 import {makeStyles} from '@mui/styles'
-import { Navigate, Outlet, useNavigate } from 'react-router';
+import { Navigate, Outlet } from 'react-router-dom';
 import { Dialog, DialogContent, LinearProgress } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
 const drawerWidth = 200;
 const breakpoint = 800;
@@ -233,7 +234,7 @@ function LayoutView() {
                 <AppBar position="sticky" className={classes.appBar}>
                     <Toolbar>
                         <div className={classes.logoBar}>
-                            <img src="/images/logo.png" style={{maxWidth: 165, maxHeight: 43}} className={classes.logo} />
+                            <img src="/images/logo.png" style={{maxWidth: 165, maxHeight: 43}} className={classes.logo} title='Logo'/>
                         </div>
                         <IconButton onClick={handleOpenDrawer}>
                             {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
@@ -326,7 +327,7 @@ function UserAvatar() {
                 className={classes.identityAvatar}
                 ref={avatarRef}
                 onClick={handler.toggle}
-            >{userAvatar ? <img src={userAvatar} style={{width: 40}} /> : initials}</Avatar>
+            >{userAvatar ? <img src={userAvatar} style={{width: 40}} title='Avatar'/> : initials}</Avatar>
             <Menu
                 anchorEl={avatarRef.current}
                 keepMounted
@@ -338,7 +339,7 @@ function UserAvatar() {
                 <div className={classes.appBar}>
                     <Avatar sx={{backgroundColor: (theme) => theme.palette.primary.main}} 
                         className={classes.identityAvatar}
-                    >{userAvatar ? <img src={userAvatar} style={{width: 40}} /> : initials}</Avatar>
+                    >{userAvatar ? <img src={userAvatar} style={{width: 40}} title='Avatar'/> : initials}</Avatar>
                     <div style={{marginTop: '1rem', fontWeight: 500}}>{`${identity?.name} ${identity?.surname}`}</div>
                     <div style={{fontSize:'0.75rem'}}>{`${identity?.mail}`}</div>
                 </div>

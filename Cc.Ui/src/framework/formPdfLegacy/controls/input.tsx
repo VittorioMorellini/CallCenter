@@ -86,7 +86,7 @@ class InputControl<T> extends React.Component<any, any> {
                     return (
                         <div>
                             {this.displayControl()}
-                            <input 
+                            <input
                                 id={name} 
                                 name={name} 
                                 type="text" 
@@ -97,7 +97,9 @@ class InputControl<T> extends React.Component<any, any> {
                                     this.changeMode('DISPLAY');
                                     validate(this.ref.value);
                                 }}  
-                                ref={(component) => this.ref = component}
+                                ref={(component) => {
+                                    this.ref = component;
+                                }}
                             />
                             <Error />
                         </div>

@@ -3,9 +3,10 @@ import { Entity } from '../../../entity';
 import { FieldContext, FieldProps, fieldWithImplementationControl } from '../../../form';
 import { ListFieldImplementation, MaterialFieldImplementation, OutlinedFieldImplementation } from '../field';
 import { SketchPicker } from 'react-color';
-import { IconButton, Theme, Typography } from '@mui/material';
+import { IconButton, Typography } from '@mui/material';
 import {makeStyles} from '@mui/styles'
 import { Clear as ClearIcon } from '@mui/icons-material';
+import { Theme } from '@mui/material/styles';
 
 const useStyles = makeStyles((theme: Theme) => ({
     color: {

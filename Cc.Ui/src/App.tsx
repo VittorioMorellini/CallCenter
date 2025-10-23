@@ -1,19 +1,18 @@
 
 import React, { useEffect } from 'react';
 import { ThemeProvider } from '@mui/styles';
-import { createMuiTheme, createTheme } from '@mui/material/styles';
+import { createTheme } from '@mui/material/styles';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { LoggerServiceProvider } from './framework/logger';
 import './App.css';
 import { RootView } from './views/root';
 import ErrorBoundary from './views/errorBoundary';
-import DateUtils from '@date-io/moment';
 import { useColor } from './app/core/hooks';
 import { useTranslation } from 'react-i18next';
 import { setLocale } from 'yup';
 //import MyComponent from './views/components/MyComponent';
-import AdapterDateFns from '@mui/lab/AdapterDateFns';
-import LocalizationProvider from '@mui/lab/LocalizationProvider';
+import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import itLocale from "date-fns/locale/it";
 
 function App() {
@@ -69,7 +68,7 @@ function App() {
     return (
         <ThemeProvider theme={theme}>
             <LoggerServiceProvider>
-                <LocalizationProvider dateAdapter={AdapterDateFns} locale={itLocale}>
+                <LocalizationProvider dateAdapter={AdapterDateFns} adapterLocale={itLocale}>
                     <Router basename={process.env.PUBLIC_URL}>
                         <ErrorBoundary>
                             <RootView />

@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Dialog, DialogContent, LinearProgress, Button, Typography, Theme, TextField, Box } from '@mui/material';
 import { makeStyles } from '@mui/styles';
@@ -159,5 +159,4 @@ function LoginView() {
         );
     }
 }
-
 export default LoginView;

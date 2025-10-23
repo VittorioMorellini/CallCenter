@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { useNavigate } from 'react-router';
+import React, { use, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
 import { DetailView, Panel } from '../../framework/ui';
@@ -11,7 +11,7 @@ import { Agency } from '../../models';
 import Fields from './fields';
 
 export default (props: any): JSX.Element => {
-    const history = useNavigate();
+    const navigate = useNavigate();
     const { t } = useTranslation();
     const isBusy = useSelector((root: RootState) => root.agency.isBusy);
     const [item, setItem] = useFormItem<Agency>(props.item || useSelector((root: RootState) => root.agency.currentItem));
@@ -21,13 +21,13 @@ export default (props: any): JSX.Element => {
 
     useEffect(() => {
         if (isUpdate) {
-            actions.find(id).catch(() => { });
-            //use(actions.find(id))
+            //actions.find(id).catch(() => { });
+            use(actions.find(id))
         }
     }, [id]);
     const handler = {
         navigateBack: () => {
-            history(-1);
+            navigate(-1);
         },
         save: () => {
             actions.save(item)
