@@ -31,6 +31,7 @@ import CommissionIndex from './commission';
 import CommissionDetail from './commission/detail';
 import AgendaIndex from './agenda';
 import LayoutView from '../app/views/layout';
+import { Suspense } from 'react';
 
 export const RootView = () => {
     
@@ -50,7 +51,7 @@ export const RootView = () => {
                 <Route key={i++} path="/company" element={<CompanyIndex />}  />,
                 <Route key={i++} path="/company/:id" element={<CompanyDetail/>}  />,
                 <Route key={i++} path="/agency" element={<AgencyIndex/>}  />,
-                <Route key={i++} path="/agency/:id" element={<AgencyDetail/>} />,
+                <Route key={i++} path="/agency/:id" element={<Suspense fallback={<div>Loading...</div>}><AgencyDetail/></Suspense>} />,
                 <Route key={i++} path="/configuration" element={<ConfigurationIndex/>} />,
                 <Route key={i++} path="/configuration/:id" element={<ConfigurationDetail/>} />,
                 <Route key={i++} path="/customer" element={<CustomerIndex/>} />,

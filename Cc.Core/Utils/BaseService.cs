@@ -21,11 +21,11 @@ namespace Cc.Core.Utils
         EntityState GetEntityState(TKey id, TEntity item);
         TContext GetContext();
 
-        void BulkInsert(TEntity item);
+        //void BulkInsert(TEntity item);
         void BulkInsert(IEnumerable<TEntity> entities);
-        void BulkUpdate(TEntity item);
+        //void BulkUpdate(TEntity item);
         void BulkUpdate(IEnumerable<TEntity> entities);
-        void BulkDelete(TEntity item);
+        //void BulkDelete(TEntity item);
         void BulkDelete(IEnumerable<TEntity> entities);
     }
 
@@ -124,10 +124,10 @@ namespace Cc.Core.Utils
             return ctx;
         }
 
-        public void BulkInsert(TEntity item)
-        {
-            BulkInsert(new TEntity[] { item });
-        }
+        //public void BulkInsert(TEntity item)
+        //{
+        //    BulkInsert(new TEntity[] { item });
+        //}
 
         public void BulkInsert(IEnumerable<TEntity> entities)
         {
@@ -139,15 +139,15 @@ namespace Cc.Core.Utils
             ctx.BulkUpdate(entities);
         }
 
-        public void BulkUpdate(TEntity item)
-        {
-            BulkUpdate(new TEntity[] { item });
-        }
+        //public void BulkUpdate(TEntity item)
+        //{
+        //    BulkUpdate(new TEntity[] { item });
+        //}
 
-        public void BulkDelete(TEntity item)
-        {
-            BulkDelete(new TEntity[] { item });
-        }
+        //public void BulkDelete(TEntity item)
+        //{
+        //    BulkDelete(new TEntity[] { item });
+        //}
 
         public void BulkDelete(IEnumerable<TEntity> entities)
         {

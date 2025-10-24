@@ -293,7 +293,7 @@ function UserAvatar() {
     const {actions: principalActions} = usePrincipalActions();
     const { t } = useTranslation();
 
-    console.log('initials', initials)
+    //console.log('initials', initials)
     const handler = {
         toggle: () => { setOpen(prevOpen => !prevOpen) },
         close: (event: React.MouseEvent<EventTarget>) => {
@@ -403,5 +403,4 @@ function AgencySelector() {
         </FormControl>
     )
 }
-
 export default LayoutView;

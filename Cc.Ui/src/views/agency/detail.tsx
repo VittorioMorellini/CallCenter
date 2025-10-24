@@ -21,8 +21,7 @@ export default (props: any): JSX.Element => {
 
     useEffect(() => {
         if (isUpdate) {
-            //actions.find(id).catch(() => { });
-            use(actions.find(id))
+            actions.find(id).catch(() => { });
         }
     }, [id]);
     const handler = {

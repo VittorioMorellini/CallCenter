@@ -55,21 +55,21 @@ export default (props: any) => {
         >
             <Field.Autocomplete model={(x: CustomerSearchModel) => x.type}
                 options={autocompleteOptions(types, x => x.type, x => x.description)} 
-                blank={{value: null, label: t('common:all')}} 
+                //blank={{value: null, label: t('common:all')}} 
             />
             <Field.Input model={(x: CustomerSearchModel) => x.firstName} ControlProps={{onKeyPress: handler.keyPress}} />
             <Field.Input model={(x: CustomerSearchModel) => x.lastName} ControlProps={{onKeyPress: handler.keyPress}} />
             <Field.Input model={(x: CustomerSearchModel) => x.taxCode} ControlProps={{onKeyPress: handler.keyPress}} />
             <Field.Autocomplete model={(x: CustomerSearchModel) => x.sex}
                 options={autocompleteOptions(sexs, x => x.value, x => x.label)} 
-                blank={{value: null, label: t('common:all')}} 
+                //blank={{value: null, label: t('common:all')}} 
             />
             <Field.Input model={(x: CustomerSearchModel) => x.phone} ControlProps={{onKeyPress: handler.keyPress}} />
             <Field.Input model={(x: CustomerSearchModel) => x.mail} ControlProps={{onKeyPress: handler.keyPress}} />
             <Field.Date model={(x: CustomerSearchModel) => x.birthDate} />
             <Field.Autocomplete model={(x: CustomerSearchModel) => x.country}
                 options={autocompleteOptions(countries, x => x.code, x => x.localName ?? x.name)} 
-                blank={{value: null, label: t('common:all')}} 
+                //blank={{value: null, label: t('common:all')}} 
             />
             <Field.Autocomplete 
                 model={(x: CustomerSearchModel) => x.districtId } 
