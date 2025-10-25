@@ -121,11 +121,11 @@ namespace Cc.Core.Services
         public string Cap { get; set; }
         public string City { get; set; }
         public string Country { get; set; }
-        public DateTime? BirthDate { get; set; }
+        public DateOnly? BirthDate { get; set; }
         public string IdentificationDocType { get; set; }
         public string IdentificationDocNumber { get; set; }
-        public DateTime? IdentificationDocReleaseDate { get; set; }
-        public DateTime? IdentificationDocExpirationDate { get; set; }
+        public DateOnly? IdentificationDocReleaseDate { get; set; }
+        public DateOnly? IdentificationDocExpirationDate { get; set; }
         public bool? Disabled { get; set; }
     }
 }

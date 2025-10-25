@@ -33,7 +33,7 @@ export class Principal extends Entity {
     @field()
     phone: string;
     @field()
-    mobilePhone: string;
+    mobile: string;
     @field() @required()
     username: string;
     @field() 

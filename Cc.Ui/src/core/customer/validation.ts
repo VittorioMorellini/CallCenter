@@ -10,7 +10,7 @@ const defaultSchema = () => createSchema<Customer>([
     // mandatory: questi campi devono sempre essere obbligatori a dispetto di quello definito nel CustomerRequiredField
     [x => x.firstName, yup.string().required().matches(/.{0,25}/)],
     [x => x.lastName, yup.string().required().matches(/.{0,25}/)],
-    [x => x.mobilePhone, yup.string().required()],
+    [x => x.mobile, yup.string().required()],
     [x => x.mail, yup.string().required().email()],
     // optional
     [x => x.sex, yup.string().nullable().matches(/^f|m|F|M$/)],
@@ -74,7 +74,7 @@ const baseSchema = () => createSchema<Customer>([
     [x => x.firstName, yup.string().required()],
     [x => x.lastName, yup.string().required()],
     [x => x.sex, yup.string().required()],
-    [x => x.mobilePhone, yup.string().required()],
+    [x => x.mobile, yup.string().required()],
     [x => x.mail, yup.string().required()],
     [x => x.address, yup.string().required()],
     [x => x.taxCode, yup.string().nullable().test('taxCodeValidation', i18next.t('entities:customer.invalidTaxCode'), (value, context) => {

@@ -25,24 +25,23 @@ export class Document extends Entity {
     @field()
     name: string;
     @field()
-    date: number;
-    @field()
-    file: ArrayBuffer | string;
+    file: ArrayBuffer;
     @field()
     repository: string;
     @field()
     externalId: string;
     @field()
-    fileSigned: ArrayBuffer | string;;
+    fileSigned: ArrayBuffer;
     @field()
     repositorySigned: string;
     @field()
     externalIdSigned: string;
     @field()
     opened: boolean;
-
     @field()
-    fileEncoded: string;
+    date: string;
+    //Extra field for upload
+    fileEncoded: string
 
     constructor(data?: any) {
         super()
@@ -70,8 +69,6 @@ export class DocumentSearchModel extends Entity implements Pagination {
     @field()
     name?: string;
     @field()
-    date?: number;
-    @field()
     file?: ArrayBuffer;
     @field()
     repository?: string;
@@ -85,6 +82,8 @@ export class DocumentSearchModel extends Entity implements Pagination {
     externalIdSigned?: string;
     @field()
     opened?: boolean;
+    @field()
+    date?: string;
 
     @field()
     pager: Pager = <Pager> {

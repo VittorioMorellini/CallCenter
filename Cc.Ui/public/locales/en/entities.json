@@ -110,7 +110,7 @@
         "taxCode": "Tax Code",
         "sex": "Sex",
         "phone": "Phone",
-        "mobilePhone": "Mobile phone",
+        "mobile": "Mobile phone",
         "mail": "Mail",
         "agencyId": "Agency",
         "vatCode": "Vat code",

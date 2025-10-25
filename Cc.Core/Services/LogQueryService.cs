@@ -51,7 +51,7 @@ namespace Cc.Core.Services
             try
             {
                 list = query.ToList();
-                item.ExecutionTime = DateTime.Now - item.Date;
+                item.ExecutionTime = TimeOnly.FromTimeSpan(DateTime.Now - item.Date);
                 item.Count = list.Count;
                 item.Query = query.ToQueryString();
             }

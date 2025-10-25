@@ -30,8 +30,7 @@ namespace Cc.Core.Services
         public override Company Find(long id)
         {
             return ctx.Company
-                //.Include(x => x.CompanyDocument)
-                .Where(x => x.Id == id).FirstOrDefault();
+                .FirstOrDefault(x => x.Id == id);
         }
 
         public IEnumerable<Company> Search(CompanySearchModel model)

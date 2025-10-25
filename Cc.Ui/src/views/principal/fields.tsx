@@ -60,7 +60,7 @@ export default ({ item, setItem, onUploadCompleted }: Props) => {
             </Box>
             <Box sx={{display: 'flex', gap: 1}}>
                 <Field.Input model={(x: Principal) => x.phone}  />
-                <Field.Input model={(x: Principal) => x.mobilePhone}  />
+                <Field.Input model={(x: Principal) => x.mobile}  />
             </Box>
             <Box sx={{display: 'flex', gap: 1}}>
                 <Field.Input model={(x: Principal) => x.mail}  />

@@ -1,13 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Cc.Core.Models
+namespace Cc.Core.Models;
+
+public partial class Vat
 {
-    public partial class Vat
-    {
-        public long Id { get; set; }
-        public string Description { get; set; } = null!;
-        public string VatCode { get; set; } = null!;
-        public double Rate { get; set; }
-    }
+    public long Id { get; set; }
+
+    public string Description { get; set; } = null!;
+
+    public string VatCode { get; set; } = null!;
+
+    public double Rate { get; set; }
+
+    public DateTime InsertDate { get; set; }
+
+    public string? InsertUser { get; set; }
+
+    public DateTime UpdateDate { get; set; }
+
+    public string? UpdateUser { get; set; }
 }

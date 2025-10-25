@@ -1,39 +1,47 @@
 import { Entity, resource, field, required } from '../framework/entity';
 import { Pagination, Pager } from '../framework/core/actions';
 
-@resource('warehouseType')
-export class WarehouseType extends Entity {
+@resource('eventAttachment')
+export class EventAttachment extends Entity {
 
     @field()
     id: number;
     @field()
-    name: string;
+    eventId: number;
     @field()
-    insertDate: string;
+    name: string;
     @field()
     insertUser: string;
     @field()
-    updateDate: string;
+    insertDate: string;
     @field()
     updateUser: string;
+    @field()
+    updateDate: string;
+    @field()
+    file: ArrayBuffer;
 
     constructor(data?: any) {
         super()
         this.init(data);      
     }
 
-    static newItem(): WarehouseType {
+    static newItem(): EventAttachment {
 
-        let item = new WarehouseType();
+        let item = new EventAttachment();
         return item;
     }
 }
 
-@resource('warehouseType')
-export class WarehouseTypeSearchModel extends Entity implements Pagination {
+@resource('eventAttachment')
+export class EventAttachmentSearchModel extends Entity implements Pagination {
     
     @field()
+    eventId?: number;
+    @field()
     name?: string;
+    @field()
+    file?: ArrayBuffer;
 
     @field()
     pager: Pager = <Pager> {

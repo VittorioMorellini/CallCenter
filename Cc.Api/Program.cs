@@ -14,6 +14,8 @@ using Serilog.Events;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.AddServiceDefaults();
 Microsoft.Extensions.Configuration.IConfiguration configuration = builder.Configuration;
 
 var logger = new LoggerConfiguration()
@@ -60,8 +62,8 @@ builder.Services.AddControllers()
 //builder.Services.AddMvc().AddJsonOptions(o => o.JsonSerializerOptions.ReferenceHandler = ).
 builder.Services.AddDbContext<CcDbContext>(
     builder => builder.UseSqlServer(configuration.GetConnectionString("Callcenter")),
-    // Ë necessario che sia Transient poichË ho necessit‡ di compiere azioni asincrone
-    // ogni Service cosÏ ha la propria versione unica del DbContext (con la propria connessione)
+    // √® necessario che sia Transient poich√® ho necessit√† di compiere azioni asincrone
+    // ogni Service cos√¨ ha la propria versione unica del DbContext (con la propria connessione)
     ServiceLifetime.Transient
 );
 builder.Services.AddSingleton(new AuthContext()
@@ -78,6 +80,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+app.MapDefaultEndpoints();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

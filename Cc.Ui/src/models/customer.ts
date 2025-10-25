@@ -42,7 +42,7 @@ export class Customer extends Entity {
     @field()
     phone: string;
     @field()
-    mobilePhone: string;
+    mobile: string;
     @field()
     mail: string;
     @field()

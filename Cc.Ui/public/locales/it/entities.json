@@ -112,7 +112,7 @@
         "phone": "Telefono",
         "mail": "Mail",
         "agencyId": "Agenzia",
-        "mobilePhone": "Cellulare",
+        "mobile": "Cellulare",
         "birthDate": "Data di nascita",
         "contactDate": "Data di contatto",
         "recallDate": "Data di ricontatto",

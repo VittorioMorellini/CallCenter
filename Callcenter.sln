@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cc.Core", "cc.Core\Cc.Core.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cc.Test", "Cc.Test\Cc.Test.csproj", "{77942EA4-ECAD-48D5-9E6F-75731908A142}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Callcenter.AppHost", "Callcenter.AppHost\Callcenter.AppHost.csproj", "{C9BD7D6D-9A37-417E-BCC0-C04381B818B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Callcenter.ServiceDefaults", "Callcenter.ServiceDefaults\Callcenter.ServiceDefaults.csproj", "{FDA97057-AB35-4EB0-0979-FC4C1E213055}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{77942EA4-ECAD-48D5-9E6F-75731908A142}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77942EA4-ECAD-48D5-9E6F-75731908A142}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77942EA4-ECAD-48D5-9E6F-75731908A142}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9BD7D6D-9A37-417E-BCC0-C04381B818B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9BD7D6D-9A37-417E-BCC0-C04381B818B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9BD7D6D-9A37-417E-BCC0-C04381B818B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9BD7D6D-9A37-417E-BCC0-C04381B818B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDA97057-AB35-4EB0-0979-FC4C1E213055}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDA97057-AB35-4EB0-0979-FC4C1E213055}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDA97057-AB35-4EB0-0979-FC4C1E213055}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDA97057-AB35-4EB0-0979-FC4C1E213055}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

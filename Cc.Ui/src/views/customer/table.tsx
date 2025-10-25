@@ -69,7 +69,7 @@ export default ({
                 <TableCell>{row.address}</TableCell>
                 <TableCell>{row.district?.description}</TableCell>
                 <TableCell>{row.district?.tabRegion?.description}</TableCell>
-                <TableCell>{row.mobilePhone}</TableCell>
+                <TableCell>{row.mobile}</TableCell>
                 <TableCell>{row.product?.description}</TableCell>
                 <TableCell></TableCell>
                 <TableCell>{row.broadcasting?.name}</TableCell>

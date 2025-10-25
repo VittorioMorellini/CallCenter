@@ -1,13 +1,17 @@
 import { Entity, resource, field, required } from '../framework/entity';
 import { Pagination, Pager } from '../framework/core/actions';
 
-@resource('warehouseType')
-export class WarehouseType extends Entity {
+@resource('vat')
+export class Vat extends Entity {
 
     @field()
     id: number;
     @field()
-    name: string;
+    description: string;
+    @field()
+    vatCode: string;
+    @field()
+    rate: number;
     @field()
     insertDate: string;
     @field()
@@ -22,18 +26,22 @@ export class WarehouseType extends Entity {
         this.init(data);      
     }
 
-    static newItem(): WarehouseType {
+    static newItem(): Vat {
 
-        let item = new WarehouseType();
+        let item = new Vat();
         return item;
     }
 }
 
-@resource('warehouseType')
-export class WarehouseTypeSearchModel extends Entity implements Pagination {
+@resource('vat')
+export class VatSearchModel extends Entity implements Pagination {
     
     @field()
-    name?: string;
+    description?: string;
+    @field()
+    vatCode?: string;
+    @field()
+    rate?: string;
 
     @field()
     pager: Pager = <Pager> {

@@ -76,7 +76,7 @@ export default ({ item, validator, showDisabledField }: Props) => {
                 options={autocompleteOptions(sexes, x => x.value, x => x.label)}
             />
             <Field.Input model={(x: Customer) => x.phone} />
-            <Field.Input model={(x: Customer) => x.mobilePhone} />
+            <Field.Input model={(x: Customer) => x.mobile} />
             <Field.Input model={(x: Customer) => x.mail} />
             <Field.Autocomplete 
                 model={(x: Customer) => x.country } 
