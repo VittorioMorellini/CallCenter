@@ -32,6 +32,8 @@ import { appointmentReducer, AppointmentState } from '../core/appointment';
 import { appointmentEndingReducer, AppointmentEndingState } from '../core/appointmentEnding';
 import { appointmentRejectReducer, AppointmentRejectState } from '../core/appointmentReject';
 import { appointmentTypeReducer, AppointmentTypeState } from '../core/appointmentType';
+import { orderTableReducer, OrderTableState } from '../core/orderTable';
+import { orderRowReducer, OrderRowState } from '../core/orderRow';
 
 export interface RootState {
     //oidc: UserState;    
@@ -57,6 +59,8 @@ export interface RootState {
     eventType: EventTypeState;
     investment: InvestmentState;
     measure: MeasureState;
+    orderTable: OrderTableState;
+    orderRow: OrderRowState;
     principal: PrincipalState;
     principalAuth: PrincipalAuthState;
     principalTabRegion: PrincipalTabRegionState;
@@ -93,6 +97,8 @@ export const root = combineReducers<RootState>({
     eventType: eventTypeReducer,
     investment: investmentReducer,
     measure: measureReducer,
+    orderTable: orderTableReducer,
+    orderRow: orderRowReducer,
     principal: principalReducer,
     principalAuth: principalAuthReducer,
     principalTabRegion: principalTabRegionReducer,

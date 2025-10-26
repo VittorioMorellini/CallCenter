@@ -69,6 +69,8 @@ namespace Cc.Core
             services.AddScoped(x => x.GetService<IServiceFactory>().AppointmentType);
             services.AddScoped(x => x.GetService<IServiceFactory>().AppointmentReject);
             services.AddScoped(x => x.GetService<IServiceFactory>().AppointmentEnding);
+            services.AddScoped(x => x.GetService<IServiceFactory>().OrderTable);
+            services.AddScoped(x => x.GetService<IServiceFactory>().OrderRow);
         }
     }
 
@@ -106,6 +108,8 @@ namespace Cc.Core
         IAppointmentEndingService AppointmentEnding { get; }
         IAppointmentRejectService AppointmentReject { get; }
         IAppointmentTypeService AppointmentType { get; }
+        IOrderTableService OrderTable { get; }
+        IOrderRowService OrderRow { get; }
     }
 
     public class ServiceFactory : IServiceFactory
@@ -200,6 +204,8 @@ namespace Cc.Core
         public IAppointmentEndingService AppointmentEnding => new AppointmentEndingService(dbContext);
         public IAppointmentTypeService AppointmentType => new AppointmentTypeService(dbContext);
         public IAppointmentRejectService AppointmentReject => new AppointmentRejectService(dbContext);
+        public IOrderTableService OrderTable => new OrderTableService(dbContext);
+        public IOrderRowService OrderRow => new OrderRowService(dbContext);
     }
 
     //public virtual JwtMiddleware Middleware => new JwtMiddleware(

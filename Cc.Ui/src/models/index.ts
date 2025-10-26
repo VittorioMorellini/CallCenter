@@ -30,6 +30,8 @@ export { Appointment, AppointmentSearchModel } from './appointment';
 export { AppointmentEnding, AppointmentEndingSearchModel } from './appointmentEnding';
 export { AppointmentReject, AppointmentRejectSearchModel } from './appointmentReject';
 export { AppointmentType, AppointmentTypeSearchModel } from './appointmentType';
+export { OrderTable, OrderTableSearchModel } from './orderTable';
+export { OrderRow, OrderRowSearchModel } from './orderRow';
 
 export class Roles {
     public static ADMIN: string = 'ADMIN';

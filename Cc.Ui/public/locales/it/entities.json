@@ -298,6 +298,40 @@
         "subject": "Subject",
         "text": "Text"
     },
+    "orderPayment": {
+        "orderId": "Ordine",
+        "dueDate": "Data di scadenza",
+        "amount": "Importo"
+    },
+    "orderRow": {
+        "orderId": "Ordine",
+        "productId": "Prodotto",
+        "quantity": "Quantità",
+        "measureId": "Misura",
+        "warehouseId": "Magazzino",
+        "registrationNumber": "Numero di registrazione"
+    },
+    "orderState": {
+        "description": "Descrizione"
+    },
+    "orderTable": {
+        "appointmentId": "Appuntamento",
+        "totalAmount": "Importo totale",
+        "vatId": "Iva",
+        "netAmount": "Importo netto",
+        "commissionId": "Commissione",
+        "commissionAmount": "Importo commissione",
+        "orderStateId": "Stato ordine",
+        "notes": "Note",
+        "date": "Data",
+        "invoiceDate": "Data fattura",
+        "invoiceNumber": "Numero fattura",
+        "taxcode": "Taxcode",
+        "accountholder": "Intestatario",
+        "vatcode": "Codice IVA",
+        "deposit": "Deposito",
+        "balance": "Saldo"
+    },
     "personRequiredField": {
         "processTypeId": "Tipo processo",
         "companyId": "Company",

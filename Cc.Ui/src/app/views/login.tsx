@@ -6,6 +6,7 @@ import { Dialog, DialogContent, LinearProgress, Button, Typography, Theme, TextF
 import { makeStyles } from '@mui/styles';
 import { RootState } from '../reducers';
 import { useAppActions } from '../core';
+import styles from '../../views/spinner.module.css';
 
 const useStyles = makeStyles((theme: Theme) => ({
     root: {
@@ -65,11 +66,11 @@ const useStyles = makeStyles((theme: Theme) => ({
 function LoginView() {
     const classes = useStyles();
     const navigate = useNavigate();
-    const dispatch = useDispatch<any>();  
     const { t }  = useTranslation();
     const { actions } = useAppActions();
     const [username, setUsername] = React.useState<string>('')
     const [password, setPassword] = React.useState<string>('')
+    const [isLoading, setIsLoading] = React.useState<boolean>(false);
 
     const p = useSelector((root: RootState) => ({
         //user: root.oidc.user,
@@ -78,13 +79,16 @@ function LoginView() {
     }));
     
     const login = (e: any) => {
+        e.preventDefault();
+        setIsLoading(true);
         actions.login(username, password)
             .then(() => {
                 navigate('/');
                 //console.log('route principal')
                 //actions.navigate('/principal')
             })
-            .catch((error: any) => console.log(error));
+            .catch((error: any) => console.log(error))
+            .finally(() => setIsLoading(false));
     };
     
     const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -155,6 +159,11 @@ function LoginView() {
                     </div>
                     {/* <img src="/images/sixtema.png" className={classes.sixtema} /> */}
                 </div>
+                {isLoading && 
+                    <div className={styles.loading}>
+                        Loading...
+                    </div>
+                }
             </div>
         );
     }

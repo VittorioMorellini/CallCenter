@@ -234,12 +234,36 @@
             "title": "Log query"
         }
     },
-    "order": {
+    "orderPayment": {
         "index": {
-            "title": "Orders"
+            "title": "Order Payment"
         },
         "detail": {
-            "title": "Order"
+            "title": "Order Payment"
+        }
+    },
+    "orderRow": {
+        "index": {
+            "title": "Order Row"
+        },
+        "detail": {
+            "title": "Order Row"
+        }
+    },
+    "orderState": {
+        "index": {
+            "title": "Order State"
+        },
+        "detail": {
+            "title": "Order State"
+        }
+    },
+    "orderTable": {
+        "index": {
+            "title": "Order Table"
+        },
+        "detail": {
+            "title": "Order detail"
         }
     },
     "notification": {

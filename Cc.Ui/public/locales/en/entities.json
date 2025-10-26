@@ -298,6 +298,40 @@
         "subject": "Subject",
         "displayName": "Name display"
     },
+    "orderPayment": {
+        "orderId": "Order",
+        "dueDate": "Due Date",
+        "amount": "Amount"
+    },
+    "orderRow": {
+        "orderId": "Order",
+        "productId": "Product",
+        "quantity": "Quantity",
+        "measureId": "Measure",
+        "warehouseId": "Warehouse",
+        "registrationNumber": "Registration Number"
+    },
+    "orderState": {
+        "description": "Description"
+    },
+    "orderTable": {
+        "appointmentId": "Appointment",
+        "totalAmount": "Total Amount",
+        "vatId": "Vat",
+        "netAmount": "Net Amount",
+        "commissionId": "Commission",
+        "commissionAmount": "Commission Amount",
+        "orderStateId": "Order State",
+        "notes": "Notes",
+        "date": "Date",
+        "invoiceDate": "Invoice Date",
+        "invoiceNumber": "Invoice Number",
+        "taxcode": "Taxcode",
+        "accountholder": "Accountholder",
+        "vatcode": "Vatcode",
+        "deposit": "Deposit",
+        "balance": "Balance"
+    },
     "personRequiredField": {
         "processTypeId": "Process Type",
         "companyId": "Company",

@@ -26,6 +26,5 @@
   "include": [
     "src", 
     "src/views/agenda/.d.ts",
-    "src/views/agency/agency.spec.tsx"  
   ]
 }

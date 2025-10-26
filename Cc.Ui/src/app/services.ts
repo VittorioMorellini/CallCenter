@@ -24,6 +24,8 @@ import { BroadcastingProductService } from '../core/broadcastingProduct/service'
 import { BroadcastingTabRegionService } from '../core/broadcastingTabRegion/service';
 import { InvestmentService } from '../core/investment/service';
 import { MeasureService } from '../core/measure/service';
+import { OrderTableService } from '../core/orderTable/service';
+import { OrderRowService } from '../core/orderRow/service';
 import { EventTypeService } from '../core/eventType/service';
 import { WarehouseTypeService } from '../core/warehouseType/service';
 import { WarehouseService } from '../core/warehouse/service';
@@ -51,6 +53,8 @@ export interface ServiceState {
     eventType: EventTypeService;
     investment: InvestmentService;
     measure: MeasureService;
+    orderTable: OrderTableService;
+    orderRow: OrderRowService;
     broadcasting: BroadcastingService;
     broadcastingProduct: BroadcastingProductService;
     broadcastingTabRegion: BroadcastingTabRegionService;
@@ -112,6 +116,8 @@ export const serviceReducer: Reducer<ServiceState, any> = typeToReducer({}, {
     eventType: new EventTypeService(process.env.REACT_APP_API_ENDPOINT || '', getAccessToken, getCustomHeaders),
     investment: new InvestmentService(process.env.REACT_APP_API_ENDPOINT || '', getAccessToken, getCustomHeaders),
     measure: new MeasureService(process.env.REACT_APP_API_ENDPOINT || '', getAccessToken, getCustomHeaders),
+    orderTable: new OrderTableService(process.env.REACT_APP_API_ENDPOINT || '', getAccessToken, getCustomHeaders),
+    orderRow: new OrderRowService(process.env.REACT_APP_API_ENDPOINT || '', getAccessToken, getCustomHeaders),
     principalAuth: new PrincipalAuthService(process.env.REACT_APP_API_ENDPOINT || '', getAccessToken, getCustomHeaders),
     principalTabRegion: new PrincipalTabRegionService(process.env.REACT_APP_API_ENDPOINT || '', getAccessToken, getCustomHeaders),
     product: new ProductService(process.env.REACT_APP_API_ENDPOINT || '', getAccessToken, getCustomHeaders),

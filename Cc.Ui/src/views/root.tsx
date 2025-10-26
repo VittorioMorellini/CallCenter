@@ -29,6 +29,8 @@ import WarehouseIndex from './warehouse';
 import WarehouseDetail from './warehouse/detail';
 import CommissionIndex from './commission';
 import CommissionDetail from './commission/detail';
+import OrderIndex from './orderTable';
+import OrderDetail from './orderTable/detail';
 import AgendaIndex from './agenda';
 import LayoutView from '../app/views/layout';
 import { Suspense } from 'react';
@@ -50,6 +52,8 @@ export const RootView = () => {
                 <Route key={i++} path="/principal/:id" element={<PrincipalDetail />}  />,
                 <Route key={i++} path="/company" element={<CompanyIndex />}  />,
                 <Route key={i++} path="/company/:id" element={<CompanyDetail/>}  />,
+                <Route key={i++} path="/order" element={<OrderIndex />}  />,
+                <Route key={i++} path="/order/:id" element={<OrderDetail/>}  />,
                 <Route key={i++} path="/agency" element={<AgencyIndex/>}  />,
                 <Route key={i++} path="/agency/:id" element={<AgencyDetail/>} />,
                 <Route key={i++} path="/configuration" element={<ConfigurationIndex/>} />,

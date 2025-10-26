@@ -146,6 +146,38 @@
             "title": "Misura"
         }
     },
+    "orderPayment": {
+        "index": {
+            "title": "Pagamenti ordine"
+        },
+        "detail": {
+            "title": "Pagamento ordine"
+        }
+    },
+    "orderRow": {
+        "index": {
+            "title": "Righe ordine"
+        },
+        "detail": {
+            "title": "Riga ordine"
+        }
+    },
+    "orderState": {
+        "index": {
+            "title": "Stato ordine"
+        },
+        "detail": {
+            "title": "Stato ordine"
+        }
+    },
+    "orderTable": {
+        "index": {
+            "title": "Ordini"
+        },
+        "detail": {
+            "title": "Dettaglio ordine"
+        }
+    },
     "personUpload": {
         "index": {
             "title": "Upload clienti"
