@@ -36,7 +36,7 @@ namespace Cc.Core.Services
                 .Include(x => x.PrincipalAuth)
                     .ThenInclude(x => x.Agency)
                 .Include(x => x.PrincipalTabRegion).ThenInclude(x => x.TabRegion)
-                .Where(x => x.Id == id).FirstOrDefault();
+                .FirstOrDefault(x => x.Id == id);
         }
 
 

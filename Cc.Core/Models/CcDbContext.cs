@@ -6,10 +6,6 @@ namespace Cc.Core.Models;
 
 public partial class CcDbContext : DbContext
 {
-    public CcDbContext()
-    {
-    }
-
     public CcDbContext(DbContextOptions<CcDbContext> options)
         : base(options)
     {
@@ -108,10 +104,6 @@ public partial class CcDbContext : DbContext
     public virtual DbSet<WarehouseMovement> WarehouseMovement { get; set; }
 
     public virtual DbSet<WarehouseType> WarehouseType { get; set; }
-
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=S-2020-150127\\SQLEXPRESS;Initial Catalog=Callcenter;Persist Security Info=False;User ID=sa;Password=sapwd;MultipleActiveResultSets=True;TrustServerCertificate=True;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -403,7 +395,7 @@ public partial class CcDbContext : DbContext
                 .HasMaxLength(100)
                 .IsUnicode(false);
             entity.Property(e => e.InsertDate)
-                .HasDefaultValueSql("(getdate())")
+                .HasDefaultValueSql("(getdate())", "DF_Company_InsertDate")
                 .HasColumnType("datetime");
             entity.Property(e => e.InsertUser)
                 .HasMaxLength(100)
@@ -415,7 +407,7 @@ public partial class CcDbContext : DbContext
                 .HasMaxLength(16)
                 .IsUnicode(false);
             entity.Property(e => e.UpdateDate)
-                .HasDefaultValueSql("(getdate())")
+                .HasDefaultValueSql("(getdate())", "DF_Company_UpdateDate")
                 .HasColumnType("datetime");
             entity.Property(e => e.UpdateUser)
                 .HasMaxLength(100)
@@ -454,7 +446,7 @@ public partial class CcDbContext : DbContext
                 .HasMaxLength(255)
                 .IsUnicode(false);
             entity.Property(e => e.InsertDate)
-                .HasDefaultValueSql("(getdate())")
+                .HasDefaultValueSql("(getdate())", "DF__Configura__Inser__119F9925")
                 .HasColumnType("datetime");
             entity.Property(e => e.InsertUser)
                 .HasMaxLength(255)
@@ -616,7 +608,7 @@ public partial class CcDbContext : DbContext
                 .HasMaxLength(50)
                 .IsUnicode(false);
             entity.Property(e => e.UpdateDate)
-                .HasDefaultValueSql("(getdate())")
+                .HasDefaultValueSql("(getdate())", "DF__Configura__Updat__1293BD5E")
                 .HasColumnType("datetime");
             entity.Property(e => e.UpdateUser)
                 .HasMaxLength(255)
@@ -685,7 +677,7 @@ public partial class CcDbContext : DbContext
                 .HasMaxLength(10)
                 .IsUnicode(false);
             entity.Property(e => e.InsertDate)
-                .HasDefaultValueSql("(getdate())")
+                .HasDefaultValueSql("(getdate())", "DF_Customer_InsertDate")
                 .HasColumnType("datetime");
             entity.Property(e => e.InsertUser)
                 .HasMaxLength(100)
@@ -714,7 +706,7 @@ public partial class CcDbContext : DbContext
                 .HasMaxLength(1)
                 .IsUnicode(false);
             entity.Property(e => e.UpdateDate)
-                .HasDefaultValueSql("(getdate())")
+                .HasDefaultValueSql("(getdate())", "DF_Customer_UpdateDate")
                 .HasColumnType("datetime");
             entity.Property(e => e.UpdateUser)
                 .HasMaxLength(100)
@@ -823,7 +815,7 @@ public partial class CcDbContext : DbContext
                 .HasMaxLength(255)
                 .IsUnicode(false);
             entity.Property(e => e.InsertDate)
-                .HasDefaultValueSql("(getdate())")
+                .HasDefaultValueSql("(getdate())", "DF__Document__Insert__2A164134")
                 .HasColumnType("datetime");
             entity.Property(e => e.InsertUser)
                 .HasMaxLength(255)
@@ -847,7 +839,7 @@ public partial class CcDbContext : DbContext
                 .HasMaxLength(255)
                 .IsUnicode(false);
             entity.Property(e => e.UpdateDate)
-                .HasDefaultValueSql("(getdate())")
+                .HasDefaultValueSql("(getdate())", "DF__Document__Update__2B0A656D")
                 .HasColumnType("datetime");
             entity.Property(e => e.UpdateUser)
                 .HasMaxLength(255)
@@ -931,7 +923,7 @@ public partial class CcDbContext : DbContext
         {
             entity.Property(e => e.Id).ValueGeneratedNever();
             entity.Property(e => e.InsertDate)
-                .HasDefaultValueSql("(getdate())")
+                .HasDefaultValueSql("(getdate())", "DF_Grouping_InsertDate")
                 .HasColumnType("datetime");
             entity.Property(e => e.InsertUser)
                 .HasMaxLength(100)
@@ -940,7 +932,7 @@ public partial class CcDbContext : DbContext
                 .HasMaxLength(255)
                 .IsUnicode(false);
             entity.Property(e => e.UpdateDate)
-                .HasDefaultValueSql("(getdate())")
+                .HasDefaultValueSql("(getdate())", "DF_Grouping_UpdateDate")
                 .HasColumnType("datetime");
             entity.Property(e => e.UpdateUser)
                 .HasMaxLength(100)
@@ -1203,7 +1195,7 @@ public partial class CcDbContext : DbContext
                 .HasMaxLength(100)
                 .IsUnicode(false);
             entity.Property(e => e.InsertDate)
-                .HasDefaultValueSql("(getdate())")
+                .HasDefaultValueSql("(getdate())", "DF__Principal__Inser__5AEE82B9")
                 .HasColumnType("datetime");
             entity.Property(e => e.InsertUser)
                 .HasMaxLength(100)
@@ -1239,7 +1231,7 @@ public partial class CcDbContext : DbContext
                 .HasMaxLength(50)
                 .IsUnicode(false);
             entity.Property(e => e.UpdateDate)
-                .HasDefaultValueSql("(getdate())")
+                .HasDefaultValueSql("(getdate())", "DF__Principal__Updat__5BE2A6F2")
                 .HasColumnType("datetime");
             entity.Property(e => e.UpdateUser)
                 .HasMaxLength(100)
@@ -1262,13 +1254,13 @@ public partial class CcDbContext : DbContext
         modelBuilder.Entity<PrincipalAuth>(entity =>
         {
             entity.Property(e => e.InsertDate)
-                .HasDefaultValueSql("(getdate())")
+                .HasDefaultValueSql("(getdate())", "DF__Principal__Inser__43D61337")
                 .HasColumnType("datetime");
             entity.Property(e => e.InsertUser)
                 .HasMaxLength(255)
                 .IsUnicode(false);
             entity.Property(e => e.UpdateDate)
-                .HasDefaultValueSql("(getdate())")
+                .HasDefaultValueSql("(getdate())", "DF__Principal__Updat__44CA3770")
                 .HasColumnType("datetime");
             entity.Property(e => e.UpdateUser)
                 .HasMaxLength(255)
@@ -1323,13 +1315,13 @@ public partial class CcDbContext : DbContext
         {
             entity.Property(e => e.Id).ValueGeneratedNever();
             entity.Property(e => e.InsertDate)
-                .HasDefaultValueSql("(getdate())")
+                .HasDefaultValueSql("(getdate())", "DF_PrincipalGrouping_InsertDate")
                 .HasColumnType("datetime");
             entity.Property(e => e.InsertUser)
                 .HasMaxLength(100)
                 .IsUnicode(false);
             entity.Property(e => e.UpdateDate)
-                .HasDefaultValueSql("(getdate())")
+                .HasDefaultValueSql("(getdate())", "DF_PrincipalGrouping_UpdateDate")
                 .HasColumnType("datetime");
             entity.Property(e => e.UpdateUser)
                 .HasMaxLength(100)
@@ -1405,13 +1397,13 @@ public partial class CcDbContext : DbContext
                 .HasMaxLength(100)
                 .IsUnicode(false);
             entity.Property(e => e.InsertDate)
-                .HasDefaultValueSql("(getdate())")
+                .HasDefaultValueSql("(getdate())", "DF_Product_InsertDate")
                 .HasColumnType("datetime");
             entity.Property(e => e.InsertUser)
                 .HasMaxLength(100)
                 .IsUnicode(false);
             entity.Property(e => e.UpdateDate)
-                .HasDefaultValueSql("(getdate())")
+                .HasDefaultValueSql("(getdate())", "DF_Product_UpdateDate")
                 .HasColumnType("datetime");
             entity.Property(e => e.UpdateUser)
                 .HasMaxLength(100)
@@ -1498,7 +1490,7 @@ public partial class CcDbContext : DbContext
                 .HasMaxLength(255)
                 .IsUnicode(false);
             entity.Property(e => e.InsertDate)
-                .HasDefaultValueSql("(getdate())")
+                .HasDefaultValueSql("(getdate())", "DF_TabCity_InsertDate")
                 .HasColumnType("datetime");
             entity.Property(e => e.InsertUser)
                 .HasMaxLength(255)
@@ -1507,7 +1499,7 @@ public partial class CcDbContext : DbContext
                 .HasMaxLength(6)
                 .IsUnicode(false);
             entity.Property(e => e.UpdateDate)
-                .HasDefaultValueSql("(getdate())")
+                .HasDefaultValueSql("(getdate())", "DF_TabCity_UpdateDate")
                 .HasColumnType("datetime");
             entity.Property(e => e.UpdateUser)
                 .HasMaxLength(255)
@@ -1528,7 +1520,7 @@ public partial class CcDbContext : DbContext
                 .HasMaxLength(3)
                 .IsUnicode(false);
             entity.Property(e => e.InsertDate)
-                .HasDefaultValueSql("(getdate())")
+                .HasDefaultValueSql("(getdate())", "DF__TabCountr__Inser__4183B671")
                 .HasColumnType("datetime");
             entity.Property(e => e.InsertUser)
                 .HasMaxLength(255)
@@ -1546,7 +1538,7 @@ public partial class CcDbContext : DbContext
                 .HasMaxLength(255)
                 .IsUnicode(false);
             entity.Property(e => e.UpdateDate)
-                .HasDefaultValueSql("(getdate())")
+                .HasDefaultValueSql("(getdate())", "DF__TabCountr__Updat__4277DAAA")
                 .HasColumnType("datetime");
             entity.Property(e => e.UpdateUser)
                 .HasMaxLength(255)
@@ -1564,7 +1556,7 @@ public partial class CcDbContext : DbContext
                 .HasMaxLength(100)
                 .IsUnicode(false);
             entity.Property(e => e.InsertDate)
-                .HasDefaultValueSql("(getdate())")
+                .HasDefaultValueSql("(getdate())", "DF_TabDistrict_InsertDate")
                 .HasColumnType("datetime");
             entity.Property(e => e.InsertUser)
                 .HasMaxLength(255)
@@ -1573,7 +1565,7 @@ public partial class CcDbContext : DbContext
                 .HasMaxLength(3)
                 .IsUnicode(false);
             entity.Property(e => e.UpdateDate)
-                .HasDefaultValueSql("(getdate())")
+                .HasDefaultValueSql("(getdate())", "DF_TabDistrict_UpdateDate")
                 .HasColumnType("datetime");
             entity.Property(e => e.UpdateUser)
                 .HasMaxLength(255)
@@ -1594,7 +1586,7 @@ public partial class CcDbContext : DbContext
                 .HasMaxLength(100)
                 .IsUnicode(false);
             entity.Property(e => e.InsertDate)
-                .HasDefaultValueSql("(getdate())")
+                .HasDefaultValueSql("(getdate())", "DF_TabRegion_InsertDate")
                 .HasColumnType("datetime");
             entity.Property(e => e.InsertUser)
                 .HasMaxLength(255)
@@ -1603,7 +1595,7 @@ public partial class CcDbContext : DbContext
                 .HasMaxLength(2)
                 .IsUnicode(false);
             entity.Property(e => e.UpdateDate)
-                .HasDefaultValueSql("(getdate())")
+                .HasDefaultValueSql("(getdate())", "DF_TabRegion_UpdateDate")
                 .HasColumnType("datetime");
             entity.Property(e => e.UpdateUser)
                 .HasMaxLength(255)

@@ -43,7 +43,8 @@ namespace Cc.Core.Services
         {
             this.context = context;
             this.authContext = authContext;
-            this.ctx = ctx ?? new CcDbContext();
+            ArgumentNullException.ThrowIfNull(ctx);
+            this.ctx = ctx; //?? new CcDbContext();
         }
 
         public string GetUserAgent()
